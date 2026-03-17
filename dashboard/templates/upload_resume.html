@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}— Resume{% endblock %}
+{% block content %}
+<div class="page-header">
+    <h1>Resume PDF</h1>
+    <span class="subtitle">Attached to every outbound email</span>
+</div>
+
+<div class="upload-card">
+    {% if resume_exists %}
+    <div class="upload-status success">
+        <span class="status-icon">✅</span>
+        <div>
+            <strong>resume.pdf</strong> is loaded and ready.<br>
+            <span class="muted">Upload a new file below to replace it.</span>
+        </div>
+    </div>
+    {% else %}
+    <div class="upload-status warning">
+        <span class="status-icon">⚠️</span>
+        <div>
+            <strong>No resume found.</strong><br>
+            <span class="muted">No resume will be attached until you upload one.</span>
+        </div>
+    </div>
+    {% endif %}
+
+    <form method="POST" enctype="multipart/form-data" class="upload-form">
+        <label class="file-label">
+            <input type="file" name="file" accept=".pdf" required class="file-input">
+            <span class="file-btn">Choose PDF…</span>
+        </label>
+        <button type="submit" class="btn btn-primary">Upload Resume</button>
+    </form>
+</div>
+{% endblock %}

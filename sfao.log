@@ -1,0 +1,1239 @@
+2026-03-16 11:36:04 [INFO] sfao.main — Running Gmail OAuth flow…
+2026-03-16 11:36:37 [INFO] sfao.main — Running Gmail OAuth flow…
+2026-03-16 11:39:02 [INFO] sfao.main — Running Gmail OAuth flow…
+2026-03-16 11:39:14 [INFO] google_auth_oauthlib.flow — "GET /?state=v6YAUb50bx2SsVxsmntedZwwYuInKM&iss=https://accounts.google.com&code=4/0AfrIepBiCl9C0B2ksznOCrQkZgGV4c_3iUcbp4lEMBmflUjzAw6hoCOhcAv9Sx7eHdTFOw&scope=https://www.googleapis.com/auth/gmail.readonly%20https://www.googleapis.com/auth/gmail.send%20https://www.googleapis.com/auth/gmail.modify HTTP/1.1" 200 65
+2026-03-16 11:39:14 [INFO] email_client.gmail_client — ✓ Gmail authentication complete. token.json saved.
+2026-03-16 11:39:14 [INFO] sfao.main — ✓ Gmail authenticated successfully.
+2026-03-16 11:40:14 [INFO] sfao.main — Running discovery + classify…
+2026-03-16 11:40:15 [INFO] scraper.orchestrator — Scraping source: Smash.vc Search Fund Investors
+2026-03-16 11:40:16 [INFO] httpx — HTTP Request: GET https://smash.vc/search-fund-investors/ "HTTP/1.1 200 OK"
+2026-03-16 11:40:16 [INFO] scraper.directory_scraper — Found 10 profile links on https://smash.vc/search-fund-investors/
+2026-03-16 11:40:23 [INFO] httpx — HTTP Request: GET https://snowballclub.com "HTTP/1.1 200 OK"
+2026-03-16 11:40:27 [INFO] httpx — HTTP Request: GET https://investing.io "HTTP/1.1 200 OK"
+2026-03-16 11:40:32 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds "HTTP/1.1 301 Moved Permanently"
+2026-03-16 11:40:33 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/ "HTTP/1.1 200 OK"
+2026-03-16 11:40:39 [INFO] httpx — HTTP Request: GET https://wscandcompany.com "HTTP/1.1 200 OK"
+2026-03-16 11:40:45 [INFO] httpx — HTTP Request: GET https://smashdigital.com "HTTP/1.1 200 OK"
+2026-03-16 11:40:48 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com "HTTP/1.1 200 OK"
+2026-03-16 11:40:52 [INFO] httpx — HTTP Request: GET https://etaequity.com "HTTP/1.1 200 OK"
+2026-03-16 11:40:57 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com "HTTP/1.1 200 OK"
+2026-03-16 11:41:00 [INFO] httpx — HTTP Request: GET https://miramarequity.com "HTTP/1.1 200 OK"
+2026-03-16 11:41:06 [INFO] httpx — HTTP Request: GET https://www.hbs.edu/news/podcasts/think-big-buy-small "HTTP/1.1 200 OK"
+2026-03-16 11:41:06 [INFO] scraper.orchestrator —   → Found 10 candidate leads from Smash.vc Search Fund Investors
+2026-03-16 11:41:06 [INFO] httpx — HTTP Request: GET https://snowballclub.com "HTTP/1.1 200 OK"
+2026-03-16 11:41:12 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact "HTTP/1.1 301 Moved Permanently"
+2026-03-16 11:41:12 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact/ "HTTP/1.1 200 OK"
+2026-03-16 11:41:14 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:41:14 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/contact-us (attempt 1)
+2026-03-16 11:41:14 [INFO] scraper.base_scraper — Retrying in 2.5s…
+2026-03-16 11:41:17 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:41:17 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/contact-us (attempt 2)
+2026-03-16 11:41:17 [INFO] scraper.base_scraper — Retrying in 4.9s…
+2026-03-16 11:41:22 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:41:22 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/contact-us (attempt 3)
+2026-03-16 11:41:22 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/contact-us after 3 attempts.
+2026-03-16 11:41:26 [INFO] httpx — HTTP Request: GET https://snowballclub.com/team "HTTP/1.1 404 Not Found"
+2026-03-16 11:41:26 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/team (attempt 1)
+2026-03-16 11:41:26 [INFO] scraper.base_scraper — Retrying in 3.0s…
+2026-03-16 11:41:29 [INFO] httpx — HTTP Request: GET https://snowballclub.com/team "HTTP/1.1 404 Not Found"
+2026-03-16 11:41:29 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/team (attempt 2)
+2026-03-16 11:41:29 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 11:41:34 [INFO] httpx — HTTP Request: GET https://snowballclub.com/team "HTTP/1.1 404 Not Found"
+2026-03-16 11:41:34 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/team (attempt 3)
+2026-03-16 11:41:34 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/team after 3 attempts.
+2026-03-16 11:41:36 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about "HTTP/1.1 301 Moved Permanently"
+2026-03-16 11:41:36 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about/ "HTTP/1.1 200 OK"
+2026-03-16 11:41:38 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:41:38 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/about-us (attempt 1)
+2026-03-16 11:41:38 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-16 11:41:41 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:41:41 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/about-us (attempt 2)
+2026-03-16 11:41:41 [INFO] scraper.base_scraper — Retrying in 4.6s…
+2026-03-16 11:41:46 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:41:46 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/about-us (attempt 3)
+2026-03-16 11:41:46 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/about-us after 3 attempts.
+2026-03-16 11:41:48 [INFO] httpx — HTTP Request: GET https://snowballclub.com/people "HTTP/1.1 404 Not Found"
+2026-03-16 11:41:48 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/people (attempt 1)
+2026-03-16 11:41:48 [INFO] scraper.base_scraper — Retrying in 2.1s…
+2026-03-16 11:41:50 [INFO] httpx — HTTP Request: GET https://snowballclub.com/people "HTTP/1.1 404 Not Found"
+2026-03-16 11:41:50 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/people (attempt 2)
+2026-03-16 11:41:50 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 11:41:55 [INFO] httpx — HTTP Request: GET https://snowballclub.com/people "HTTP/1.1 404 Not Found"
+2026-03-16 11:41:55 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/people (attempt 3)
+2026-03-16 11:41:55 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/people after 3 attempts.
+2026-03-16 11:41:57 [INFO] httpx — HTTP Request: GET https://snowballclub.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 11:41:57 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/leadership (attempt 1)
+2026-03-16 11:41:57 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 11:41:59 [INFO] httpx — HTTP Request: GET https://snowballclub.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 11:41:59 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/leadership (attempt 2)
+2026-03-16 11:41:59 [INFO] scraper.base_scraper — Retrying in 4.9s…
+2026-03-16 11:42:04 [INFO] httpx — HTTP Request: GET https://snowballclub.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 11:42:04 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/leadership (attempt 3)
+2026-03-16 11:42:04 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/leadership after 3 attempts.
+2026-03-16 11:42:07 [INFO] httpx — HTTP Request: GET https://snowballclub.com/founders "HTTP/1.1 404 Not Found"
+2026-03-16 11:42:07 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/founders (attempt 1)
+2026-03-16 11:42:07 [INFO] scraper.base_scraper — Retrying in 2.9s…
+2026-03-16 11:42:11 [INFO] httpx — HTTP Request: GET https://snowballclub.com/founders "HTTP/1.1 404 Not Found"
+2026-03-16 11:42:11 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/founders (attempt 2)
+2026-03-16 11:42:11 [INFO] scraper.base_scraper — Retrying in 4.6s…
+2026-03-16 11:42:15 [INFO] httpx — HTTP Request: GET https://snowballclub.com/founders "HTTP/1.1 404 Not Found"
+2026-03-16 11:42:15 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/founders (attempt 3)
+2026-03-16 11:42:15 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/founders after 3 attempts.
+2026-03-16 11:42:18 [INFO] httpx — HTTP Request: GET https://snowballclub.com/us "HTTP/1.1 404 Not Found"
+2026-03-16 11:42:18 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/us (attempt 1)
+2026-03-16 11:42:18 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 11:42:21 [INFO] httpx — HTTP Request: GET https://snowballclub.com/us "HTTP/1.1 404 Not Found"
+2026-03-16 11:42:21 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/us (attempt 2)
+2026-03-16 11:42:21 [INFO] scraper.base_scraper — Retrying in 4.1s…
+2026-03-16 11:42:25 [INFO] httpx — HTTP Request: GET https://snowballclub.com/us "HTTP/1.1 404 Not Found"
+2026-03-16 11:42:25 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/us (attempt 3)
+2026-03-16 11:42:25 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/us after 3 attempts.
+2026-03-16 11:42:27 [INFO] httpx — HTTP Request: GET https://snowballclub.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 11:42:27 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/reach-out (attempt 1)
+2026-03-16 11:42:27 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-16 11:42:31 [INFO] httpx — HTTP Request: GET https://snowballclub.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 11:42:31 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/reach-out (attempt 2)
+2026-03-16 11:42:31 [INFO] scraper.base_scraper — Retrying in 4.9s…
+2026-03-16 11:42:36 [INFO] httpx — HTTP Request: GET https://snowballclub.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 11:42:36 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/reach-out (attempt 3)
+2026-03-16 11:42:36 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/reach-out after 3 attempts.
+2026-03-16 11:42:36 [INFO] scraper.orchestrator —   Skipping https://snowballclub.com — no email found.
+2026-03-16 11:42:36 [INFO] httpx — HTTP Request: GET https://investing.io "HTTP/1.1 200 OK"
+2026-03-16 11:42:39 [INFO] httpx — HTTP Request: GET https://investing.io/contact "HTTP/1.1 301 Moved Permanently"
+2026-03-16 11:42:39 [INFO] httpx — HTTP Request: GET https://investing.io/contact/ "HTTP/1.1 200 OK"
+2026-03-16 11:42:42 [INFO] httpx — HTTP Request: GET https://investing.io/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:42:42 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/contact-us (attempt 1)
+2026-03-16 11:42:42 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 11:42:45 [INFO] httpx — HTTP Request: GET https://investing.io/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:42:45 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/contact-us (attempt 2)
+2026-03-16 11:42:45 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 11:42:50 [INFO] httpx — HTTP Request: GET https://investing.io/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:42:50 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/contact-us (attempt 3)
+2026-03-16 11:42:50 [ERROR] scraper.base_scraper — Failed to fetch https://investing.io/contact-us after 3 attempts.
+2026-03-16 11:42:53 [INFO] httpx — HTTP Request: GET https://investing.io/team "HTTP/1.1 404 Not Found"
+2026-03-16 11:42:53 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/team (attempt 1)
+2026-03-16 11:42:53 [INFO] scraper.base_scraper — Retrying in 3.0s…
+2026-03-16 11:42:57 [INFO] httpx — HTTP Request: GET https://investing.io/team "HTTP/1.1 404 Not Found"
+2026-03-16 11:42:57 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/team (attempt 2)
+2026-03-16 11:42:57 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 11:43:02 [INFO] httpx — HTTP Request: GET https://investing.io/team "HTTP/1.1 404 Not Found"
+2026-03-16 11:43:02 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/team (attempt 3)
+2026-03-16 11:43:02 [ERROR] scraper.base_scraper — Failed to fetch https://investing.io/team after 3 attempts.
+2026-03-16 11:43:04 [INFO] httpx — HTTP Request: GET https://investing.io/about "HTTP/1.1 301 Moved Permanently"
+2026-03-16 11:43:04 [INFO] httpx — HTTP Request: GET https://investing.io/about/ "HTTP/1.1 200 OK"
+2026-03-16 11:43:06 [INFO] httpx — HTTP Request: GET https://investing.io/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:43:06 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/about-us (attempt 1)
+2026-03-16 11:43:06 [INFO] scraper.base_scraper — Retrying in 2.6s…
+2026-03-16 11:43:10 [INFO] httpx — HTTP Request: GET https://investing.io/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:43:10 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/about-us (attempt 2)
+2026-03-16 11:43:10 [INFO] scraper.base_scraper — Retrying in 4.9s…
+2026-03-16 11:43:15 [INFO] httpx — HTTP Request: GET https://investing.io/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:43:15 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/about-us (attempt 3)
+2026-03-16 11:43:15 [ERROR] scraper.base_scraper — Failed to fetch https://investing.io/about-us after 3 attempts.
+2026-03-16 11:43:19 [INFO] httpx — HTTP Request: GET https://investing.io/people "HTTP/1.1 404 Not Found"
+2026-03-16 11:43:19 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/people (attempt 1)
+2026-03-16 11:43:19 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-16 11:43:22 [INFO] httpx — HTTP Request: GET https://investing.io/people "HTTP/1.1 404 Not Found"
+2026-03-16 11:43:22 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/people (attempt 2)
+2026-03-16 11:43:22 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 11:43:27 [INFO] httpx — HTTP Request: GET https://investing.io/people "HTTP/1.1 404 Not Found"
+2026-03-16 11:43:27 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/people (attempt 3)
+2026-03-16 11:43:27 [ERROR] scraper.base_scraper — Failed to fetch https://investing.io/people after 3 attempts.
+2026-03-16 11:43:30 [INFO] httpx — HTTP Request: GET https://investing.io/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 11:43:30 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/leadership (attempt 1)
+2026-03-16 11:43:30 [INFO] scraper.base_scraper — Retrying in 2.1s…
+2026-03-16 11:43:33 [INFO] httpx — HTTP Request: GET https://investing.io/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 11:43:33 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/leadership (attempt 2)
+2026-03-16 11:43:33 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-16 11:43:37 [INFO] httpx — HTTP Request: GET https://investing.io/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 11:43:37 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/leadership (attempt 3)
+2026-03-16 11:43:37 [ERROR] scraper.base_scraper — Failed to fetch https://investing.io/leadership after 3 attempts.
+2026-03-16 11:43:41 [INFO] httpx — HTTP Request: GET https://investing.io/founders "HTTP/1.1 404 Not Found"
+2026-03-16 11:43:41 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/founders (attempt 1)
+2026-03-16 11:43:41 [INFO] scraper.base_scraper — Retrying in 3.0s…
+2026-03-16 11:43:45 [INFO] httpx — HTTP Request: GET https://investing.io/founders "HTTP/1.1 404 Not Found"
+2026-03-16 11:43:45 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/founders (attempt 2)
+2026-03-16 11:43:45 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 11:43:50 [INFO] httpx — HTTP Request: GET https://investing.io/founders "HTTP/1.1 404 Not Found"
+2026-03-16 11:43:50 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/founders (attempt 3)
+2026-03-16 11:43:50 [ERROR] scraper.base_scraper — Failed to fetch https://investing.io/founders after 3 attempts.
+2026-03-16 11:43:52 [INFO] httpx — HTTP Request: GET https://investing.io/us "HTTP/1.1 301 Moved Permanently"
+2026-03-16 11:43:52 [INFO] httpx — HTTP Request: GET https://investing.io/usd-decline/ "HTTP/1.1 200 OK"
+2026-03-16 11:43:54 [INFO] httpx — HTTP Request: GET https://investing.io/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 11:43:54 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/reach-out (attempt 1)
+2026-03-16 11:43:54 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-16 11:43:58 [INFO] httpx — HTTP Request: GET https://investing.io/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 11:43:58 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/reach-out (attempt 2)
+2026-03-16 11:43:58 [INFO] scraper.base_scraper — Retrying in 4.6s…
+2026-03-16 11:44:02 [INFO] httpx — HTTP Request: GET https://investing.io/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 11:44:02 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/reach-out (attempt 3)
+2026-03-16 11:44:02 [ERROR] scraper.base_scraper — Failed to fetch https://investing.io/reach-out after 3 attempts.
+2026-03-16 11:44:02 [INFO] scraper.orchestrator —   Skipping https://investing.io — no email found.
+2026-03-16 11:44:04 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds "HTTP/1.1 301 Moved Permanently"
+2026-03-16 11:44:04 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/ "HTTP/1.1 200 OK"
+2026-03-16 11:44:07 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/contact "HTTP/1.1 301 Moved Permanently"
+2026-03-16 11:44:08 [INFO] httpx — HTTP Request: GET https://capitalpad.com/contact/ "HTTP/1.1 200 OK"
+2026-03-16 11:44:13 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:44:13 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/contact-us (attempt 1)
+2026-03-16 11:44:13 [INFO] scraper.base_scraper — Retrying in 2.9s…
+2026-03-16 11:44:16 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:44:16 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/contact-us (attempt 2)
+2026-03-16 11:44:16 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-16 11:44:22 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:44:22 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/contact-us (attempt 3)
+2026-03-16 11:44:22 [ERROR] scraper.base_scraper — Failed to fetch https://capitalpad.com/search-funds/contact-us after 3 attempts.
+2026-03-16 11:44:25 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/team "HTTP/1.1 404 Not Found"
+2026-03-16 11:44:25 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/team (attempt 1)
+2026-03-16 11:44:25 [INFO] scraper.base_scraper — Retrying in 2.6s…
+2026-03-16 11:44:29 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/team "HTTP/1.1 404 Not Found"
+2026-03-16 11:44:29 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/team (attempt 2)
+2026-03-16 11:44:29 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 11:44:35 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/team "HTTP/1.1 404 Not Found"
+2026-03-16 11:44:35 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/team (attempt 3)
+2026-03-16 11:44:35 [ERROR] scraper.base_scraper — Failed to fetch https://capitalpad.com/search-funds/team after 3 attempts.
+2026-03-16 11:44:39 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/about "HTTP/1.1 404 Not Found"
+2026-03-16 11:44:39 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/about (attempt 1)
+2026-03-16 11:44:39 [INFO] scraper.base_scraper — Retrying in 2.2s…
+2026-03-16 11:44:42 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/about "HTTP/1.1 404 Not Found"
+2026-03-16 11:44:42 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/about (attempt 2)
+2026-03-16 11:44:42 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-16 11:44:47 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/about "HTTP/1.1 404 Not Found"
+2026-03-16 11:44:47 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/about (attempt 3)
+2026-03-16 11:44:47 [ERROR] scraper.base_scraper — Failed to fetch https://capitalpad.com/search-funds/about after 3 attempts.
+2026-03-16 11:44:52 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:44:52 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/about-us (attempt 1)
+2026-03-16 11:44:52 [INFO] scraper.base_scraper — Retrying in 2.6s…
+2026-03-16 11:44:55 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:44:55 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/about-us (attempt 2)
+2026-03-16 11:44:55 [INFO] scraper.base_scraper — Retrying in 5.0s…
+2026-03-16 11:45:01 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:45:01 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/about-us (attempt 3)
+2026-03-16 11:45:01 [ERROR] scraper.base_scraper — Failed to fetch https://capitalpad.com/search-funds/about-us after 3 attempts.
+2026-03-16 11:45:05 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/people "HTTP/1.1 404 Not Found"
+2026-03-16 11:45:05 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/people (attempt 1)
+2026-03-16 11:45:05 [INFO] scraper.base_scraper — Retrying in 2.7s…
+2026-03-16 11:45:08 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/people "HTTP/1.1 404 Not Found"
+2026-03-16 11:45:08 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/people (attempt 2)
+2026-03-16 11:45:08 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 11:45:15 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/people "HTTP/1.1 404 Not Found"
+2026-03-16 11:45:15 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/people (attempt 3)
+2026-03-16 11:45:15 [ERROR] scraper.base_scraper — Failed to fetch https://capitalpad.com/search-funds/people after 3 attempts.
+2026-03-16 11:45:19 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 11:45:19 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/leadership (attempt 1)
+2026-03-16 11:45:19 [INFO] scraper.base_scraper — Retrying in 2.1s…
+2026-03-16 11:45:23 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 11:45:23 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/leadership (attempt 2)
+2026-03-16 11:45:23 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 11:45:29 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 11:45:29 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/leadership (attempt 3)
+2026-03-16 11:45:29 [ERROR] scraper.base_scraper — Failed to fetch https://capitalpad.com/search-funds/leadership after 3 attempts.
+2026-03-16 11:45:33 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/founders "HTTP/1.1 404 Not Found"
+2026-03-16 11:45:33 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/founders (attempt 1)
+2026-03-16 11:45:33 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 11:45:36 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/founders "HTTP/1.1 404 Not Found"
+2026-03-16 11:45:36 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/founders (attempt 2)
+2026-03-16 11:45:36 [INFO] scraper.base_scraper — Retrying in 4.1s…
+2026-03-16 11:45:41 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/founders "HTTP/1.1 404 Not Found"
+2026-03-16 11:45:41 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/founders (attempt 3)
+2026-03-16 11:45:41 [ERROR] scraper.base_scraper — Failed to fetch https://capitalpad.com/search-funds/founders after 3 attempts.
+2026-03-16 11:45:44 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/us "HTTP/1.1 404 Not Found"
+2026-03-16 11:45:44 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/us (attempt 1)
+2026-03-16 11:45:44 [INFO] scraper.base_scraper — Retrying in 2.2s…
+2026-03-16 11:45:47 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/us "HTTP/1.1 404 Not Found"
+2026-03-16 11:45:47 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/us (attempt 2)
+2026-03-16 11:45:47 [INFO] scraper.base_scraper — Retrying in 5.0s…
+2026-03-16 11:45:54 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/us "HTTP/1.1 404 Not Found"
+2026-03-16 11:45:54 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/us (attempt 3)
+2026-03-16 11:45:54 [ERROR] scraper.base_scraper — Failed to fetch https://capitalpad.com/search-funds/us after 3 attempts.
+2026-03-16 11:45:57 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 11:45:57 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/reach-out (attempt 1)
+2026-03-16 11:45:57 [INFO] scraper.base_scraper — Retrying in 2.1s…
+2026-03-16 11:46:00 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 11:46:00 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/reach-out (attempt 2)
+2026-03-16 11:46:00 [INFO] scraper.base_scraper — Retrying in 4.5s…
+2026-03-16 11:46:06 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 11:46:06 [WARNING] scraper.base_scraper — HTTP 404 for https://capitalpad.com/search-funds/reach-out (attempt 3)
+2026-03-16 11:46:06 [ERROR] scraper.base_scraper — Failed to fetch https://capitalpad.com/search-funds/reach-out after 3 attempts.
+2026-03-16 11:46:06 [INFO] scraper.orchestrator —   Skipping https://capitalpad.com/search-funds — no email found.
+2026-03-16 11:46:08 [INFO] httpx — HTTP Request: GET https://wscandcompany.com "HTTP/1.1 200 OK"
+2026-03-16 11:46:08 [INFO] scraper.orchestrator —   ✓ Added lead: WSC & Company <info@wscandcompany.com>
+2026-03-16 11:46:08 [INFO] httpx — HTTP Request: GET https://smashdigital.com "HTTP/1.1 200 OK"
+2026-03-16 11:46:11 [INFO] httpx — HTTP Request: GET https://smashdigital.com/contact "HTTP/1.1 301 Moved Permanently"
+2026-03-16 11:46:11 [INFO] httpx — HTTP Request: GET https://smashdigital.com/contact/ "HTTP/1.1 200 OK"
+2026-03-16 11:46:13 [INFO] httpx — HTTP Request: GET https://smashdigital.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:46:13 [WARNING] scraper.base_scraper — HTTP 404 for https://smashdigital.com/contact-us (attempt 1)
+2026-03-16 11:46:13 [INFO] scraper.base_scraper — Retrying in 2.5s…
+2026-03-16 11:46:17 [INFO] httpx — HTTP Request: GET https://smashdigital.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:46:17 [WARNING] scraper.base_scraper — HTTP 404 for https://smashdigital.com/contact-us (attempt 2)
+2026-03-16 11:46:17 [INFO] scraper.base_scraper — Retrying in 4.5s…
+2026-03-16 11:46:22 [INFO] httpx — HTTP Request: GET https://smashdigital.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 11:46:22 [WARNING] scraper.base_scraper — HTTP 404 for https://smashdigital.com/contact-us (attempt 3)
+2026-03-16 11:46:22 [ERROR] scraper.base_scraper — Failed to fetch https://smashdigital.com/contact-us after 3 attempts.
+2026-03-16 11:46:24 [INFO] httpx — HTTP Request: GET https://smashdigital.com/team "HTTP/1.1 404 Not Found"
+2026-03-16 11:46:24 [WARNING] scraper.base_scraper — HTTP 404 for https://smashdigital.com/team (attempt 1)
+2026-03-16 11:46:24 [INFO] scraper.base_scraper — Retrying in 2.0s…
+2026-03-16 11:46:27 [INFO] httpx — HTTP Request: GET https://smashdigital.com/team "HTTP/1.1 404 Not Found"
+2026-03-16 11:46:27 [WARNING] scraper.base_scraper — HTTP 404 for https://smashdigital.com/team (attempt 2)
+2026-03-16 11:46:27 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 11:46:32 [INFO] httpx — HTTP Request: GET https://smashdigital.com/team "HTTP/1.1 404 Not Found"
+2026-03-16 11:46:32 [WARNING] scraper.base_scraper — HTTP 404 for https://smashdigital.com/team (attempt 3)
+2026-03-16 11:46:32 [ERROR] scraper.base_scraper — Failed to fetch https://smashdigital.com/team after 3 attempts.
+2026-03-16 12:03:33 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/about: The read operation timed out (attempt 1)
+2026-03-16 12:03:33 [INFO] scraper.base_scraper — Retrying in 2.6s…
+2026-03-16 12:03:36 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/about: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:03:36 [INFO] scraper.base_scraper — Retrying in 4.9s…
+2026-03-16 12:04:15 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/about: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:04:15 [ERROR] scraper.base_scraper — Failed to fetch https://smashdigital.com/about after 3 attempts.
+2026-03-16 12:04:16 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/about-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:04:16 [INFO] scraper.base_scraper — Retrying in 2.9s…
+2026-03-16 12:04:19 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/about-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:04:19 [INFO] scraper.base_scraper — Retrying in 4.5s…
+2026-03-16 12:04:34 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/about-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:04:34 [ERROR] scraper.base_scraper — Failed to fetch https://smashdigital.com/about-us after 3 attempts.
+2026-03-16 12:04:36 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/people: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:04:36 [INFO] scraper.base_scraper — Retrying in 2.0s…
+2026-03-16 12:04:40 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/people: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:04:40 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 12:04:44 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/people: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:04:44 [ERROR] scraper.base_scraper — Failed to fetch https://smashdigital.com/people after 3 attempts.
+2026-03-16 12:04:46 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/leadership: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:04:46 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 12:05:14 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/leadership: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:05:14 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 12:05:19 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/leadership: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:05:19 [ERROR] scraper.base_scraper — Failed to fetch https://smashdigital.com/leadership after 3 attempts.
+2026-03-16 12:05:21 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/founders: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:05:21 [INFO] scraper.base_scraper — Retrying in 2.9s…
+2026-03-16 12:05:24 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/founders: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:05:24 [INFO] scraper.base_scraper — Retrying in 4.1s…
+2026-03-16 12:05:41 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/founders: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:05:41 [ERROR] scraper.base_scraper — Failed to fetch https://smashdigital.com/founders after 3 attempts.
+2026-03-16 12:05:43 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:05:43 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 12:05:45 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:05:45 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 12:09:15 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:09:15 [ERROR] scraper.base_scraper — Failed to fetch https://smashdigital.com/us after 3 attempts.
+2026-03-16 12:09:17 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/reach-out: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:09:17 [INFO] scraper.base_scraper — Retrying in 2.3s…
+2026-03-16 12:12:25 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/reach-out: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:12:25 [INFO] scraper.base_scraper — Retrying in 5.0s…
+2026-03-16 12:12:30 [WARNING] scraper.base_scraper — Request error for https://smashdigital.com/reach-out: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:12:30 [ERROR] scraper.base_scraper — Failed to fetch https://smashdigital.com/reach-out after 3 attempts.
+2026-03-16 12:12:30 [INFO] scraper.orchestrator —   Skipping https://smashdigital.com — no email found.
+2026-03-16 12:12:30 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:12:30 [INFO] scraper.base_scraper — Retrying in 3.0s…
+2026-03-16 12:12:33 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:12:33 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 12:16:21 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:16:21 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com after 3 attempts.
+2026-03-16 12:16:23 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/contact: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:16:23 [INFO] scraper.base_scraper — Retrying in 2.5s…
+2026-03-16 12:19:28 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/contact: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:19:28 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 12:19:32 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/contact: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:19:32 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/contact after 3 attempts.
+2026-03-16 12:19:36 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/contact-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:19:36 [INFO] scraper.base_scraper — Retrying in 2.3s…
+2026-03-16 12:19:38 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/contact-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:19:38 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 12:19:49 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/contact-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:19:49 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/contact-us after 3 attempts.
+2026-03-16 12:19:50 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/team: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:19:50 [INFO] scraper.base_scraper — Retrying in 2.9s…
+2026-03-16 12:19:53 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/team: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:19:53 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-16 12:19:57 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/team: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:19:57 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/team after 3 attempts.
+2026-03-16 12:19:59 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/about: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:19:59 [INFO] scraper.base_scraper — Retrying in 2.1s…
+2026-03-16 12:21:34 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/about: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:21:34 [INFO] scraper.base_scraper — Retrying in 4.9s…
+2026-03-16 12:21:39 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/about: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:21:39 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/about after 3 attempts.
+2026-03-16 12:21:41 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/about-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:21:41 [INFO] scraper.base_scraper — Retrying in 2.7s…
+2026-03-16 12:21:44 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/about-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:21:44 [INFO] scraper.base_scraper — Retrying in 4.1s…
+2026-03-16 12:21:48 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/about-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:21:48 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/about-us after 3 attempts.
+2026-03-16 12:21:51 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/people: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:21:51 [INFO] scraper.base_scraper — Retrying in 2.9s…
+2026-03-16 12:21:54 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/people: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:21:54 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 12:23:42 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/people: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:23:42 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/people after 3 attempts.
+2026-03-16 12:23:44 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/leadership: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:23:44 [INFO] scraper.base_scraper — Retrying in 2.7s…
+2026-03-16 12:23:47 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/leadership: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:23:47 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-16 12:23:52 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/leadership: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:23:52 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/leadership after 3 attempts.
+2026-03-16 12:23:54 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/founders: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:23:54 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 12:23:56 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/founders: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:23:56 [INFO] scraper.base_scraper — Retrying in 4.3s…
+2026-03-16 12:24:00 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/founders: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:24:00 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/founders after 3 attempts.
+2026-03-16 12:24:59 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:24:59 [INFO] scraper.base_scraper — Retrying in 2.1s…
+2026-03-16 12:25:01 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:25:01 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-16 12:26:53 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:26:53 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/us after 3 attempts.
+2026-03-16 12:26:55 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/reach-out: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:26:55 [INFO] scraper.base_scraper — Retrying in 2.9s…
+2026-03-16 12:26:58 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/reach-out: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:26:58 [INFO] scraper.base_scraper — Retrying in 4.9s…
+2026-03-16 12:27:09 [WARNING] scraper.base_scraper — Request error for https://www.aspectinvestors.com/reach-out: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:27:09 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/reach-out after 3 attempts.
+2026-03-16 12:27:09 [INFO] scraper.orchestrator —   Skipping https://www.aspectinvestors.com — no email found.
+2026-03-16 12:27:10 [WARNING] scraper.base_scraper — Request error for https://etaequity.com: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:27:10 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-16 12:27:12 [WARNING] scraper.base_scraper — Request error for https://etaequity.com: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:27:12 [INFO] scraper.base_scraper — Retrying in 4.9s…
+2026-03-16 12:27:34 [WARNING] scraper.base_scraper — Request error for https://etaequity.com: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:27:34 [ERROR] scraper.base_scraper — Failed to fetch https://etaequity.com after 3 attempts.
+2026-03-16 12:27:35 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/contact: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:27:35 [INFO] scraper.base_scraper — Retrying in 2.3s…
+2026-03-16 12:30:57 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/contact: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:30:57 [INFO] scraper.base_scraper — Retrying in 4.9s…
+2026-03-16 12:31:02 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/contact: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:31:02 [ERROR] scraper.base_scraper — Failed to fetch https://etaequity.com/contact after 3 attempts.
+2026-03-16 12:31:04 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/contact-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:31:04 [INFO] scraper.base_scraper — Retrying in 2.3s…
+2026-03-16 12:31:07 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/contact-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:31:07 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 12:31:27 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/contact-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:31:27 [ERROR] scraper.base_scraper — Failed to fetch https://etaequity.com/contact-us after 3 attempts.
+2026-03-16 12:31:30 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/team: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:31:30 [INFO] scraper.base_scraper — Retrying in 2.3s…
+2026-03-16 12:31:32 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/team: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:31:32 [INFO] scraper.base_scraper — Retrying in 4.0s…
+2026-03-16 12:31:42 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/team: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:31:42 [ERROR] scraper.base_scraper — Failed to fetch https://etaequity.com/team after 3 attempts.
+2026-03-16 12:31:43 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/about: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:31:43 [INFO] scraper.base_scraper — Retrying in 2.5s…
+2026-03-16 12:34:06 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/about: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:34:06 [INFO] scraper.base_scraper — Retrying in 4.3s…
+2026-03-16 12:34:10 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/about: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:34:10 [ERROR] scraper.base_scraper — Failed to fetch https://etaequity.com/about after 3 attempts.
+2026-03-16 12:34:12 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/about-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:34:12 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 12:34:32 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/about-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:34:32 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 12:34:36 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/about-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:34:36 [ERROR] scraper.base_scraper — Failed to fetch https://etaequity.com/about-us after 3 attempts.
+2026-03-16 12:34:39 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/people: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:34:39 [INFO] scraper.base_scraper — Retrying in 2.7s…
+2026-03-16 12:34:42 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/people: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:34:42 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 12:34:48 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/people: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:34:48 [ERROR] scraper.base_scraper — Failed to fetch https://etaequity.com/people after 3 attempts.
+2026-03-16 12:34:49 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/leadership: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:34:49 [INFO] scraper.base_scraper — Retrying in 2.2s…
+2026-03-16 12:34:51 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/leadership: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:34:51 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 12:35:07 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/leadership: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:35:07 [ERROR] scraper.base_scraper — Failed to fetch https://etaequity.com/leadership after 3 attempts.
+2026-03-16 12:35:10 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/founders: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:35:10 [INFO] scraper.base_scraper — Retrying in 2.9s…
+2026-03-16 12:35:12 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/founders: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:35:12 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-16 12:35:23 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/founders: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:35:23 [ERROR] scraper.base_scraper — Failed to fetch https://etaequity.com/founders after 3 attempts.
+2026-03-16 12:35:25 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:35:25 [INFO] scraper.base_scraper — Retrying in 2.9s…
+2026-03-16 12:35:36 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:35:36 [INFO] scraper.base_scraper — Retrying in 4.1s…
+2026-03-16 12:35:40 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:35:40 [ERROR] scraper.base_scraper — Failed to fetch https://etaequity.com/us after 3 attempts.
+2026-03-16 12:36:16 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/reach-out: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:36:16 [INFO] scraper.base_scraper — Retrying in 2.1s…
+2026-03-16 12:36:18 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/reach-out: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:36:18 [INFO] scraper.base_scraper — Retrying in 4.1s…
+2026-03-16 12:36:22 [WARNING] scraper.base_scraper — Request error for https://etaequity.com/reach-out: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:36:22 [ERROR] scraper.base_scraper — Failed to fetch https://etaequity.com/reach-out after 3 attempts.
+2026-03-16 12:36:22 [INFO] scraper.orchestrator —   Skipping https://etaequity.com — no email found.
+2026-03-16 12:36:22 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:36:22 [INFO] scraper.base_scraper — Retrying in 2.2s…
+2026-03-16 12:36:26 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:36:26 [INFO] scraper.base_scraper — Retrying in 4.5s…
+2026-03-16 12:36:31 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:36:31 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com after 3 attempts.
+2026-03-16 12:36:33 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/contact: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:36:33 [INFO] scraper.base_scraper — Retrying in 2.2s…
+2026-03-16 12:36:36 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/contact: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:36:36 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 12:36:40 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/contact: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:36:40 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/contact after 3 attempts.
+2026-03-16 12:36:57 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/contact-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:36:57 [INFO] scraper.base_scraper — Retrying in 2.0s…
+2026-03-16 12:36:59 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/contact-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:36:59 [INFO] scraper.base_scraper — Retrying in 4.5s…
+2026-03-16 12:37:04 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/contact-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:37:04 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/contact-us after 3 attempts.
+2026-03-16 12:37:45 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/team: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:37:45 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-16 12:37:48 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/team: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:37:48 [INFO] scraper.base_scraper — Retrying in 4.5s…
+2026-03-16 12:38:04 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/team: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:38:04 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/team after 3 attempts.
+2026-03-16 12:38:07 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/about: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:38:07 [INFO] scraper.base_scraper — Retrying in 2.1s…
+2026-03-16 12:38:10 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/about: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:38:10 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 12:38:16 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/about: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:38:16 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/about after 3 attempts.
+2026-03-16 12:38:18 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/about-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:38:18 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 12:42:00 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/about-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:42:00 [INFO] scraper.base_scraper — Retrying in 4.3s…
+2026-03-16 12:42:04 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/about-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:42:04 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/about-us after 3 attempts.
+2026-03-16 12:42:06 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/people: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:42:06 [INFO] scraper.base_scraper — Retrying in 2.6s…
+2026-03-16 12:42:30 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/people: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:42:30 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 12:42:35 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/people: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:42:35 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/people after 3 attempts.
+2026-03-16 12:45:40 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/leadership: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:45:40 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 12:45:43 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/leadership: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:45:43 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-16 12:46:09 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/leadership: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:46:09 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/leadership after 3 attempts.
+2026-03-16 12:46:11 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/founders: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:46:11 [INFO] scraper.base_scraper — Retrying in 2.5s…
+2026-03-16 12:46:14 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/founders: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:46:14 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 12:47:17 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/founders: [Errno 8] nodename nor servname provided, or not known (attempt 3)
+2026-03-16 12:47:17 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/founders after 3 attempts.
+2026-03-16 12:47:19 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/us: [Errno 8] nodename nor servname provided, or not known (attempt 1)
+2026-03-16 12:47:19 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-16 12:47:22 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:47:22 [INFO] scraper.base_scraper — Retrying in 4.0s…
+2026-03-16 12:47:26 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:47:26 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/us after 3 attempts.
+2026-03-16 12:47:27 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/reach-out: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:47:27 [INFO] scraper.base_scraper — Retrying in 2.5s…
+2026-03-16 12:47:30 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/reach-out: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:47:30 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 12:47:55 [WARNING] scraper.base_scraper — Request error for https://www.endurancesearchpartners.com/reach-out: [Errno 8] nodename nor servname provided, or not known (attempt 3)
+2026-03-16 12:47:55 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/reach-out after 3 attempts.
+2026-03-16 12:47:55 [INFO] scraper.orchestrator —   Skipping https://www.endurancesearchpartners.com — no email found.
+2026-03-16 12:47:55 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com: [Errno 8] nodename nor servname provided, or not known (attempt 1)
+2026-03-16 12:47:55 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 12:47:57 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com: [Errno 8] nodename nor servname provided, or not known (attempt 2)
+2026-03-16 12:47:57 [INFO] scraper.base_scraper — Retrying in 4.1s…
+2026-03-16 12:48:01 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:48:01 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com after 3 attempts.
+2026-03-16 12:48:04 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/contact: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:48:04 [INFO] scraper.base_scraper — Retrying in 2.1s…
+2026-03-16 12:48:06 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/contact: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:48:06 [INFO] scraper.base_scraper — Retrying in 4.1s…
+2026-03-16 12:48:20 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/contact: [Errno 8] nodename nor servname provided, or not known (attempt 3)
+2026-03-16 12:48:20 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/contact after 3 attempts.
+2026-03-16 12:48:21 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/contact-us: [Errno 8] nodename nor servname provided, or not known (attempt 1)
+2026-03-16 12:48:21 [INFO] scraper.base_scraper — Retrying in 2.1s…
+2026-03-16 12:48:23 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/contact-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:48:23 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 12:49:15 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/contact-us: _ssl.c:1011: The handshake operation timed out (attempt 3)
+2026-03-16 12:49:15 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/contact-us after 3 attempts.
+2026-03-16 12:49:17 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/team: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:49:17 [INFO] scraper.base_scraper — Retrying in 3.0s…
+2026-03-16 12:49:20 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/team: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:49:20 [INFO] scraper.base_scraper — Retrying in 4.5s…
+2026-03-16 12:49:36 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/team: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:49:36 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/team after 3 attempts.
+2026-03-16 12:49:38 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/about: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:49:38 [INFO] scraper.base_scraper — Retrying in 2.2s…
+2026-03-16 12:49:40 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/about: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:49:40 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 12:49:58 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/about: [Errno 8] nodename nor servname provided, or not known (attempt 3)
+2026-03-16 12:49:58 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/about after 3 attempts.
+2026-03-16 12:50:00 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/about-us: [Errno 8] nodename nor servname provided, or not known (attempt 1)
+2026-03-16 12:50:00 [INFO] scraper.base_scraper — Retrying in 2.5s…
+2026-03-16 12:50:02 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/about-us: [Errno 8] nodename nor servname provided, or not known (attempt 2)
+2026-03-16 12:50:02 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-16 12:50:07 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/about-us: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 3)
+2026-03-16 12:50:07 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/about-us after 3 attempts.
+2026-03-16 12:50:08 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/people: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:50:08 [INFO] scraper.base_scraper — Retrying in 2.7s…
+2026-03-16 12:50:10 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/people: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 2)
+2026-03-16 12:50:10 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 12:50:40 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/people: [Errno 8] nodename nor servname provided, or not known (attempt 3)
+2026-03-16 12:50:40 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/people after 3 attempts.
+2026-03-16 12:50:42 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/leadership: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028) (attempt 1)
+2026-03-16 12:50:42 [INFO] scraper.base_scraper — Retrying in 2.6s…
+2026-03-16 12:56:16 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/leadership: timed out (attempt 2)
+2026-03-16 12:56:16 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 12:56:39 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/leadership: [Errno 8] nodename nor servname provided, or not known (attempt 3)
+2026-03-16 12:56:39 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/leadership after 3 attempts.
+2026-03-16 12:56:42 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/founders: [Errno 8] nodename nor servname provided, or not known (attempt 1)
+2026-03-16 12:56:42 [INFO] scraper.base_scraper — Retrying in 2.2s…
+2026-03-16 12:56:44 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/founders: [Errno 8] nodename nor servname provided, or not known (attempt 2)
+2026-03-16 12:56:44 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-16 12:56:48 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/founders: [Errno 8] nodename nor servname provided, or not known (attempt 3)
+2026-03-16 12:56:48 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/founders after 3 attempts.
+2026-03-16 12:56:50 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/us: [Errno 8] nodename nor servname provided, or not known (attempt 1)
+2026-03-16 12:56:50 [INFO] scraper.base_scraper — Retrying in 2.5s…
+2026-03-16 13:12:04 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/us: [Errno 8] nodename nor servname provided, or not known (attempt 2)
+2026-03-16 13:12:04 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-16 13:14:27 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/us: [Errno 8] nodename nor servname provided, or not known (attempt 3)
+2026-03-16 13:14:27 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/us after 3 attempts.
+2026-03-16 13:14:30 [WARNING] scraper.base_scraper — Request error for https://miramarequity.com/reach-out: [Errno 8] nodename nor servname provided, or not known (attempt 1)
+2026-03-16 13:14:30 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-16 13:14:33 [INFO] httpx — HTTP Request: GET https://miramarequity.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 13:14:33 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/reach-out (attempt 2)
+2026-03-16 13:14:33 [INFO] scraper.base_scraper — Retrying in 4.3s…
+2026-03-16 13:14:37 [INFO] httpx — HTTP Request: GET https://miramarequity.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 13:14:37 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/reach-out (attempt 3)
+2026-03-16 13:14:37 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/reach-out after 3 attempts.
+2026-03-16 13:14:37 [INFO] scraper.orchestrator —   Skipping https://miramarequity.com — no email found.
+2026-03-16 13:14:38 [INFO] httpx — HTTP Request: GET https://www.hbs.edu/news/podcasts/think-big-buy-small "HTTP/1.1 200 OK"
+2026-03-16 13:14:38 [INFO] scraper.orchestrator —   ✓ Added lead: Think Big, Buy Small <news@hbs.edu>
+2026-03-16 13:14:38 [INFO] scraper.orchestrator — Scraping source: Searchfunder Top Investors
+2026-03-16 13:14:38 [INFO] httpx — HTTP Request: GET https://searchfunder.com/post/top-20-search-fund-investors-so-far "HTTP/1.1 200 OK"
+2026-03-16 13:14:38 [INFO] scraper.directory_scraper — Found 0 profile links on https://searchfunder.com/post/top-20-search-fund-investors-so-far
+2026-03-16 13:14:38 [INFO] scraper.orchestrator —   → Found 0 candidate leads from Searchfunder Top Investors
+2026-03-16 13:14:38 [INFO] scraper.orchestrator — Scraping source: Anacapa Partners Portfolio
+2026-03-16 13:14:39 [INFO] httpx — HTTP Request: GET https://anacapapartners.com/portfolio "HTTP/1.1 302 302"
+2026-03-16 13:14:39 [INFO] httpx — HTTP Request: GET https://anacapapartners.com/portfolio/index.gsp "HTTP/1.1 404 404"
+2026-03-16 13:14:39 [WARNING] scraper.base_scraper — HTTP 404 for https://anacapapartners.com/portfolio (attempt 1)
+2026-03-16 13:14:39 [INFO] scraper.base_scraper — Retrying in 3.0s…
+2026-03-16 13:14:42 [INFO] httpx — HTTP Request: GET https://anacapapartners.com/portfolio "HTTP/1.1 302 302"
+2026-03-16 13:14:42 [INFO] httpx — HTTP Request: GET https://anacapapartners.com/portfolio/index.gsp "HTTP/1.1 404 404"
+2026-03-16 13:14:42 [WARNING] scraper.base_scraper — HTTP 404 for https://anacapapartners.com/portfolio (attempt 2)
+2026-03-16 13:14:42 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 13:14:58 [WARNING] scraper.base_scraper — Request error for https://anacapapartners.com/portfolio: [Errno 54] Connection reset by peer (attempt 3)
+2026-03-16 13:14:58 [ERROR] scraper.base_scraper — Failed to fetch https://anacapapartners.com/portfolio after 3 attempts.
+2026-03-16 13:14:58 [ERROR] scraper.directory_scraper — Cannot scrape https://anacapapartners.com/portfolio
+2026-03-16 13:14:58 [INFO] scraper.orchestrator —   → Found 0 candidate leads from Anacapa Partners Portfolio
+2026-03-16 13:14:58 [INFO] scraper.orchestrator — Scraping source: Relay Investments Portfolio
+2026-03-16 13:14:59 [INFO] httpx — HTTP Request: GET https://www.relayinvestments.com/entrepreneurs "HTTP/1.1 404 Not Found"
+2026-03-16 13:14:59 [WARNING] scraper.base_scraper — HTTP 404 for https://www.relayinvestments.com/entrepreneurs (attempt 1)
+2026-03-16 13:14:59 [INFO] scraper.base_scraper — Retrying in 2.5s…
+2026-03-16 13:15:01 [INFO] httpx — HTTP Request: GET https://www.relayinvestments.com/entrepreneurs "HTTP/1.1 404 Not Found"
+2026-03-16 13:15:01 [WARNING] scraper.base_scraper — HTTP 404 for https://www.relayinvestments.com/entrepreneurs (attempt 2)
+2026-03-16 13:15:01 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 13:15:08 [INFO] httpx — HTTP Request: GET https://www.relayinvestments.com/entrepreneurs "HTTP/1.1 404 Not Found"
+2026-03-16 13:15:08 [WARNING] scraper.base_scraper — HTTP 404 for https://www.relayinvestments.com/entrepreneurs (attempt 3)
+2026-03-16 13:15:08 [ERROR] scraper.base_scraper — Failed to fetch https://www.relayinvestments.com/entrepreneurs after 3 attempts.
+2026-03-16 13:15:08 [ERROR] scraper.directory_scraper — Cannot scrape https://www.relayinvestments.com/entrepreneurs
+2026-03-16 13:15:08 [INFO] scraper.orchestrator —   → Found 0 candidate leads from Relay Investments Portfolio
+2026-03-16 13:15:08 [INFO] scraper.orchestrator — Scraping source: Broadtree Partners Entrepreneurs
+2026-03-16 13:15:09 [INFO] httpx — HTTP Request: GET https://www.broadtreepartners.com/entrepreneurs "HTTP/1.1 301 Moved Permanently"
+2026-03-16 13:15:10 [INFO] httpx — HTTP Request: GET https://broadtreepartners.com/entrepreneurs "HTTP/1.1 404 Not Found"
+2026-03-16 13:15:10 [WARNING] scraper.base_scraper — HTTP 404 for https://www.broadtreepartners.com/entrepreneurs (attempt 1)
+2026-03-16 13:15:10 [INFO] scraper.base_scraper — Retrying in 2.7s…
+2026-03-16 13:15:13 [INFO] httpx — HTTP Request: GET https://www.broadtreepartners.com/entrepreneurs "HTTP/1.1 301 Moved Permanently"
+2026-03-16 13:15:20 [INFO] httpx — HTTP Request: GET https://broadtreepartners.com/entrepreneurs "HTTP/1.1 404 Not Found"
+2026-03-16 13:15:21 [WARNING] scraper.base_scraper — HTTP 404 for https://www.broadtreepartners.com/entrepreneurs (attempt 2)
+2026-03-16 13:15:21 [INFO] scraper.base_scraper — Retrying in 4.5s…
+2026-03-16 13:18:36 [INFO] httpx — HTTP Request: GET https://www.broadtreepartners.com/entrepreneurs "HTTP/1.1 301 Moved Permanently"
+2026-03-16 13:18:37 [INFO] httpx — HTTP Request: GET https://broadtreepartners.com/entrepreneurs "HTTP/1.1 404 Not Found"
+2026-03-16 13:18:37 [WARNING] scraper.base_scraper — HTTP 404 for https://www.broadtreepartners.com/entrepreneurs (attempt 3)
+2026-03-16 13:18:37 [ERROR] scraper.base_scraper — Failed to fetch https://www.broadtreepartners.com/entrepreneurs after 3 attempts.
+2026-03-16 13:18:37 [ERROR] scraper.directory_scraper — Cannot scrape https://www.broadtreepartners.com/entrepreneurs
+2026-03-16 13:18:37 [INFO] scraper.orchestrator —   → Found 0 candidate leads from Broadtree Partners Entrepreneurs
+2026-03-16 13:18:37 [INFO] scraper.orchestrator — Discovery complete. 2 new leads added.
+2026-03-16 13:18:37 [INFO] sfao.main — New leads discovered: 2
+2026-03-16 13:18:38 [INFO] classifier.lead_classifier — Classified lead info@wscandcompany.com: sectors=[], geo_hook='fellow operator who has taken the search fund journey successfully'
+2026-03-16 13:18:38 [INFO] classifier.lead_classifier — Classified lead news@hbs.edu: sectors=['software', 'healthcare', 'government_services', 'industrials', 'lower_middle_market', 'consumer'], geo_hook='fellow operator who has taken the search fund journey successfully'
+2026-03-16 13:18:38 [INFO] classifier.lead_classifier — Classified 2 previously unclassified leads.
+2026-03-16 13:18:38 [INFO] sfao.main — Leads classified: 2
+2026-03-16 13:18:38 [INFO] sfao.main — Running send batch [DRY RUN]…
+2026-03-16 13:18:38 [INFO] email_client.dispatcher — Sending to 2 leads (dry_run=True)
+2026-03-16 13:18:38 [WARNING] attachments.manager — Resume PDF not found at /Users/ishaanjoshi/Documents/GitHub/search_fund_automation/attachments/resume.pdf. Place your resume at attachments/resume.pdf
+2026-03-16 13:18:38 [INFO] email_client.dispatcher — 
+============================================================
+TO: info@wscandcompany.com
+SUBJECT: Quick Ask from a Chester County Entrepreneur
+────────────────────────────────────────────────────────────
+Hi WSC,
+
+I am a high school senior in Chester County and an incoming freshman at UT Austin ECE (ECB) and Canfield Business Honors (25-student cohort). I wanted to connect with a fellow operator who has taken the search fund journey successfully who has actually done the search fund path successfully.
+
+I spent the last few years co-founding two B2B SaaS startups, InstaTrain ($100k pre-seed) and Luminerra, and was selected as a Morgan Stanley Scholar. I'm trying to apply that operator mindset to investing, particularly at the intersection of technology and ETA.
+
+I know you focus heavily on the lower middle market now. I would be grateful for the opportunity to help with any sourcing or diligence work on an unpaid basis, just to learn how you operate and add leverage to your search.
+
+I've attached my resume. Do you have 15 minutes next week for a quick chat?
+
+Best,
+Ishaan Joshi
+============================================================
+
+2026-03-16 13:18:38 [INFO] email_client.dispatcher — 
+============================================================
+TO: news@hbs.edu
+SUBJECT: Quick Ask from a Chester County Entrepreneur
+────────────────────────────────────────────────────────────
+Hi Think,
+
+I am a high school senior in Chester County and an incoming freshman at UT Austin ECE (ECB) and Canfield Business Honors (25-student cohort). I wanted to connect with a fellow operator who has taken the search fund journey successfully who has actually done the search fund path successfully.
+
+I spent the last few years co-founding two B2B SaaS startups, InstaTrain ($100k pre-seed) and Luminerra, and was selected as a Morgan Stanley Scholar. I'm trying to apply that operator mindset to investing, particularly at the intersection of technology and ETA.
+
+I know you focus heavily on the software and vertical SaaS space now. I would be grateful for the opportunity to help with any sourcing or diligence work on an unpaid basis, just to learn how you operate and add leverage to your search.
+
+I've attached my resume. Do you have 15 minutes next week for a quick chat?
+
+Best,
+Ishaan Joshi
+============================================================
+
+2026-03-16 13:18:38 [INFO] email_client.dispatcher — Send batch complete. 2 emails logged (dry run).
+2026-03-16 13:18:38 [INFO] sfao.main — Emails sent: 2
+2026-03-16 19:57:18 [INFO] sfao.main — Running discovery + classify…
+2026-03-16 19:57:18 [INFO] scraper.orchestrator — Scraping source: Smash.vc Search Fund Investors
+2026-03-16 19:57:20 [INFO] httpx — HTTP Request: GET https://smash.vc/search-fund-investors/ "HTTP/1.1 200 OK"
+2026-03-16 19:57:20 [INFO] scraper.directory_scraper — Found 10 profile links on https://smash.vc/search-fund-investors/
+2026-03-16 19:57:22 [INFO] httpx — HTTP Request: GET https://snowballclub.com "HTTP/1.1 200 OK"
+2026-03-16 19:57:25 [INFO] httpx — HTTP Request: GET https://investing.io "HTTP/1.1 200 OK"
+2026-03-16 19:57:27 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds "HTTP/1.1 403 Forbidden"
+2026-03-16 19:57:27 [WARNING] scraper.base_scraper — HTTP 403 for https://capitalpad.com/search-funds (attempt 1)
+2026-03-16 19:57:27 [INFO] scraper.base_scraper — Retrying in 2.2s…
+2026-03-16 19:57:29 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds "HTTP/1.1 403 Forbidden"
+2026-03-16 19:57:29 [WARNING] scraper.base_scraper — HTTP 403 for https://capitalpad.com/search-funds (attempt 2)
+2026-03-16 19:57:29 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 19:57:34 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds "HTTP/1.1 403 Forbidden"
+2026-03-16 19:57:34 [WARNING] scraper.base_scraper — HTTP 403 for https://capitalpad.com/search-funds (attempt 3)
+2026-03-16 19:57:34 [ERROR] scraper.base_scraper — Failed to fetch https://capitalpad.com/search-funds after 3 attempts.
+2026-03-16 19:57:37 [INFO] httpx — HTTP Request: GET https://wscandcompany.com "HTTP/1.1 200 OK"
+2026-03-16 19:57:39 [INFO] httpx — HTTP Request: GET https://smashdigital.com "HTTP/1.1 200 OK"
+2026-03-16 19:57:43 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com "HTTP/1.1 200 OK"
+2026-03-16 19:57:46 [INFO] httpx — HTTP Request: GET https://etaequity.com "HTTP/1.1 200 OK"
+2026-03-16 19:57:48 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com "HTTP/1.1 200 OK"
+2026-03-16 19:57:52 [INFO] httpx — HTTP Request: GET https://miramarequity.com "HTTP/1.1 200 OK"
+2026-03-16 19:57:54 [INFO] httpx — HTTP Request: GET https://www.hbs.edu/news/podcasts/think-big-buy-small "HTTP/1.1 200 OK"
+2026-03-16 19:57:54 [INFO] scraper.orchestrator —   → Found 9 candidate leads from Smash.vc Search Fund Investors
+2026-03-16 19:57:54 [INFO] httpx — HTTP Request: GET https://snowballclub.com "HTTP/1.1 200 OK"
+2026-03-16 19:57:57 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact "HTTP/1.1 301 Moved Permanently"
+2026-03-16 19:57:57 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact/ "HTTP/1.1 200 OK"
+2026-03-16 19:57:59 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 19:57:59 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/contact-us (attempt 1)
+2026-03-16 19:57:59 [INFO] scraper.base_scraper — Retrying in 2.3s…
+2026-03-16 19:58:02 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:02 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/contact-us (attempt 2)
+2026-03-16 19:58:02 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-16 19:58:06 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:06 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/contact-us (attempt 3)
+2026-03-16 19:58:06 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/contact-us after 3 attempts.
+2026-03-16 19:58:09 [INFO] httpx — HTTP Request: GET https://snowballclub.com/team "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:09 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/team (attempt 1)
+2026-03-16 19:58:09 [INFO] scraper.base_scraper — Retrying in 2.6s…
+2026-03-16 19:58:12 [INFO] httpx — HTTP Request: GET https://snowballclub.com/team "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:12 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/team (attempt 2)
+2026-03-16 19:58:12 [INFO] scraper.base_scraper — Retrying in 5.0s…
+2026-03-16 19:58:17 [INFO] httpx — HTTP Request: GET https://snowballclub.com/team "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:17 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/team (attempt 3)
+2026-03-16 19:58:17 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/team after 3 attempts.
+2026-03-16 19:58:19 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about "HTTP/1.1 301 Moved Permanently"
+2026-03-16 19:58:19 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about/ "HTTP/1.1 200 OK"
+2026-03-16 19:58:22 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:22 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/about-us (attempt 1)
+2026-03-16 19:58:22 [INFO] scraper.base_scraper — Retrying in 2.2s…
+2026-03-16 19:58:25 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:25 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/about-us (attempt 2)
+2026-03-16 19:58:25 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 19:58:30 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:30 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/about-us (attempt 3)
+2026-03-16 19:58:30 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/about-us after 3 attempts.
+2026-03-16 19:58:33 [INFO] httpx — HTTP Request: GET https://snowballclub.com/people "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:33 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/people (attempt 1)
+2026-03-16 19:58:33 [INFO] scraper.base_scraper — Retrying in 2.1s…
+2026-03-16 19:58:35 [INFO] httpx — HTTP Request: GET https://snowballclub.com/people "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:35 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/people (attempt 2)
+2026-03-16 19:58:35 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 19:58:40 [INFO] httpx — HTTP Request: GET https://snowballclub.com/people "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:40 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/people (attempt 3)
+2026-03-16 19:58:40 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/people after 3 attempts.
+2026-03-16 19:58:42 [INFO] httpx — HTTP Request: GET https://snowballclub.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:42 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/leadership (attempt 1)
+2026-03-16 19:58:42 [INFO] scraper.base_scraper — Retrying in 2.9s…
+2026-03-16 19:58:46 [INFO] httpx — HTTP Request: GET https://snowballclub.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:46 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/leadership (attempt 2)
+2026-03-16 19:58:46 [INFO] scraper.base_scraper — Retrying in 4.1s…
+2026-03-16 19:58:50 [INFO] httpx — HTTP Request: GET https://snowballclub.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:50 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/leadership (attempt 3)
+2026-03-16 19:58:50 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/leadership after 3 attempts.
+2026-03-16 19:58:53 [INFO] httpx — HTTP Request: GET https://snowballclub.com/founders "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:53 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/founders (attempt 1)
+2026-03-16 19:58:53 [INFO] scraper.base_scraper — Retrying in 2.7s…
+2026-03-16 19:58:56 [INFO] httpx — HTTP Request: GET https://snowballclub.com/founders "HTTP/1.1 404 Not Found"
+2026-03-16 19:58:56 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/founders (attempt 2)
+2026-03-16 19:58:56 [INFO] scraper.base_scraper — Retrying in 4.5s…
+2026-03-16 19:59:01 [INFO] httpx — HTTP Request: GET https://snowballclub.com/founders "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:01 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/founders (attempt 3)
+2026-03-16 19:59:01 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/founders after 3 attempts.
+2026-03-16 19:59:02 [INFO] httpx — HTTP Request: GET https://snowballclub.com/us "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:02 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/us (attempt 1)
+2026-03-16 19:59:02 [INFO] scraper.base_scraper — Retrying in 2.6s…
+2026-03-16 19:59:05 [INFO] httpx — HTTP Request: GET https://snowballclub.com/us "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:05 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/us (attempt 2)
+2026-03-16 19:59:05 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 19:59:10 [INFO] httpx — HTTP Request: GET https://snowballclub.com/us "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:10 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/us (attempt 3)
+2026-03-16 19:59:10 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/us after 3 attempts.
+2026-03-16 19:59:12 [INFO] httpx — HTTP Request: GET https://snowballclub.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:12 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/reach-out (attempt 1)
+2026-03-16 19:59:12 [INFO] scraper.base_scraper — Retrying in 2.3s…
+2026-03-16 19:59:15 [INFO] httpx — HTTP Request: GET https://snowballclub.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:15 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/reach-out (attempt 2)
+2026-03-16 19:59:15 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 19:59:20 [INFO] httpx — HTTP Request: GET https://snowballclub.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:20 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/reach-out (attempt 3)
+2026-03-16 19:59:20 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/reach-out after 3 attempts.
+2026-03-16 19:59:20 [INFO] scraper.orchestrator —   Skipping https://snowballclub.com — no email found.
+2026-03-16 19:59:20 [INFO] httpx — HTTP Request: GET https://investing.io "HTTP/1.1 200 OK"
+2026-03-16 19:59:22 [INFO] httpx — HTTP Request: GET https://investing.io/contact "HTTP/1.1 301 Moved Permanently"
+2026-03-16 19:59:22 [INFO] httpx — HTTP Request: GET https://investing.io/contact/ "HTTP/1.1 200 OK"
+2026-03-16 19:59:25 [INFO] httpx — HTTP Request: GET https://investing.io/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:25 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/contact-us (attempt 1)
+2026-03-16 19:59:25 [INFO] scraper.base_scraper — Retrying in 2.7s…
+2026-03-16 19:59:28 [INFO] httpx — HTTP Request: GET https://investing.io/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:28 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/contact-us (attempt 2)
+2026-03-16 19:59:28 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 19:59:33 [INFO] httpx — HTTP Request: GET https://investing.io/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:33 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/contact-us (attempt 3)
+2026-03-16 19:59:33 [ERROR] scraper.base_scraper — Failed to fetch https://investing.io/contact-us after 3 attempts.
+2026-03-16 19:59:36 [INFO] httpx — HTTP Request: GET https://investing.io/team "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:36 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/team (attempt 1)
+2026-03-16 19:59:36 [INFO] scraper.base_scraper — Retrying in 2.7s…
+2026-03-16 19:59:39 [INFO] httpx — HTTP Request: GET https://investing.io/team "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:39 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/team (attempt 2)
+2026-03-16 19:59:39 [INFO] scraper.base_scraper — Retrying in 4.0s…
+2026-03-16 19:59:43 [INFO] httpx — HTTP Request: GET https://investing.io/team "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:43 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/team (attempt 3)
+2026-03-16 19:59:43 [ERROR] scraper.base_scraper — Failed to fetch https://investing.io/team after 3 attempts.
+2026-03-16 19:59:46 [INFO] httpx — HTTP Request: GET https://investing.io/about "HTTP/1.1 301 Moved Permanently"
+2026-03-16 19:59:46 [INFO] httpx — HTTP Request: GET https://investing.io/about/ "HTTP/1.1 200 OK"
+2026-03-16 19:59:49 [INFO] httpx — HTTP Request: GET https://investing.io/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:49 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/about-us (attempt 1)
+2026-03-16 19:59:49 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 19:59:52 [INFO] httpx — HTTP Request: GET https://investing.io/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:52 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/about-us (attempt 2)
+2026-03-16 19:59:52 [INFO] scraper.base_scraper — Retrying in 4.9s…
+2026-03-16 19:59:57 [INFO] httpx — HTTP Request: GET https://investing.io/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 19:59:57 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/about-us (attempt 3)
+2026-03-16 19:59:57 [ERROR] scraper.base_scraper — Failed to fetch https://investing.io/about-us after 3 attempts.
+2026-03-16 20:00:01 [INFO] httpx — HTTP Request: GET https://investing.io/people "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:01 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/people (attempt 1)
+2026-03-16 20:00:01 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-16 20:00:04 [INFO] httpx — HTTP Request: GET https://investing.io/people "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:04 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/people (attempt 2)
+2026-03-16 20:00:04 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-16 20:00:09 [INFO] httpx — HTTP Request: GET https://investing.io/people "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:09 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/people (attempt 3)
+2026-03-16 20:00:09 [ERROR] scraper.base_scraper — Failed to fetch https://investing.io/people after 3 attempts.
+2026-03-16 20:00:11 [INFO] httpx — HTTP Request: GET https://investing.io/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:11 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/leadership (attempt 1)
+2026-03-16 20:00:11 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 20:00:15 [INFO] httpx — HTTP Request: GET https://investing.io/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:15 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/leadership (attempt 2)
+2026-03-16 20:00:15 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-16 20:00:19 [INFO] httpx — HTTP Request: GET https://investing.io/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:19 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/leadership (attempt 3)
+2026-03-16 20:00:19 [ERROR] scraper.base_scraper — Failed to fetch https://investing.io/leadership after 3 attempts.
+2026-03-16 20:00:21 [INFO] httpx — HTTP Request: GET https://investing.io/founders "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:21 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/founders (attempt 1)
+2026-03-16 20:00:21 [INFO] scraper.base_scraper — Retrying in 2.3s…
+2026-03-16 20:00:24 [INFO] httpx — HTTP Request: GET https://investing.io/founders "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:24 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/founders (attempt 2)
+2026-03-16 20:00:24 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 20:00:29 [INFO] httpx — HTTP Request: GET https://investing.io/founders "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:29 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/founders (attempt 3)
+2026-03-16 20:00:29 [ERROR] scraper.base_scraper — Failed to fetch https://investing.io/founders after 3 attempts.
+2026-03-16 20:00:30 [INFO] httpx — HTTP Request: GET https://investing.io/us "HTTP/1.1 301 Moved Permanently"
+2026-03-16 20:00:30 [INFO] httpx — HTTP Request: GET https://investing.io/usd-decline/ "HTTP/1.1 200 OK"
+2026-03-16 20:00:33 [INFO] httpx — HTTP Request: GET https://investing.io/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:33 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/reach-out (attempt 1)
+2026-03-16 20:00:33 [INFO] scraper.base_scraper — Retrying in 2.9s…
+2026-03-16 20:00:37 [INFO] httpx — HTTP Request: GET https://investing.io/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:37 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/reach-out (attempt 2)
+2026-03-16 20:00:37 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 20:00:42 [INFO] httpx — HTTP Request: GET https://investing.io/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:42 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/reach-out (attempt 3)
+2026-03-16 20:00:42 [ERROR] scraper.base_scraper — Failed to fetch https://investing.io/reach-out after 3 attempts.
+2026-03-16 20:00:42 [INFO] scraper.orchestrator —   Skipping https://investing.io — no email found.
+2026-03-16 20:00:42 [INFO] httpx — HTTP Request: GET https://wscandcompany.com "HTTP/1.1 200 OK"
+2026-03-16 20:00:42 [INFO] scraper.orchestrator —   Already have lead: info@wscandcompany.com
+2026-03-16 20:00:42 [INFO] httpx — HTTP Request: GET https://smashdigital.com "HTTP/1.1 200 OK"
+2026-03-16 20:00:44 [INFO] httpx — HTTP Request: GET https://smashdigital.com/contact "HTTP/1.1 301 Moved Permanently"
+2026-03-16 20:00:45 [INFO] httpx — HTTP Request: GET https://smashdigital.com/contact/ "HTTP/1.1 200 OK"
+2026-03-16 20:00:48 [INFO] httpx — HTTP Request: GET https://smashdigital.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:48 [WARNING] scraper.base_scraper — HTTP 404 for https://smashdigital.com/contact-us (attempt 1)
+2026-03-16 20:00:48 [INFO] scraper.base_scraper — Retrying in 2.5s…
+2026-03-16 20:00:51 [INFO] httpx — HTTP Request: GET https://smashdigital.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:51 [WARNING] scraper.base_scraper — HTTP 404 for https://smashdigital.com/contact-us (attempt 2)
+2026-03-16 20:00:51 [INFO] scraper.base_scraper — Retrying in 4.0s…
+2026-03-16 20:00:55 [INFO] httpx — HTTP Request: GET https://smashdigital.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:55 [WARNING] scraper.base_scraper — HTTP 404 for https://smashdigital.com/contact-us (attempt 3)
+2026-03-16 20:00:55 [ERROR] scraper.base_scraper — Failed to fetch https://smashdigital.com/contact-us after 3 attempts.
+2026-03-16 20:00:59 [INFO] httpx — HTTP Request: GET https://smashdigital.com/team "HTTP/1.1 404 Not Found"
+2026-03-16 20:00:59 [WARNING] scraper.base_scraper — HTTP 404 for https://smashdigital.com/team (attempt 1)
+2026-03-16 20:00:59 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-16 20:01:02 [INFO] httpx — HTTP Request: GET https://smashdigital.com/team "HTTP/1.1 404 Not Found"
+2026-03-16 20:01:02 [WARNING] scraper.base_scraper — HTTP 404 for https://smashdigital.com/team (attempt 2)
+2026-03-16 20:01:02 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 20:01:06 [INFO] httpx — HTTP Request: GET https://smashdigital.com/team "HTTP/1.1 404 Not Found"
+2026-03-16 20:01:06 [WARNING] scraper.base_scraper — HTTP 404 for https://smashdigital.com/team (attempt 3)
+2026-03-16 20:01:06 [ERROR] scraper.base_scraper — Failed to fetch https://smashdigital.com/team after 3 attempts.
+2026-03-16 20:01:09 [INFO] httpx — HTTP Request: GET https://smashdigital.com/about "HTTP/1.1 301 Moved Permanently"
+2026-03-16 20:01:09 [INFO] httpx — HTTP Request: GET https://smashdigital.com/about/ "HTTP/1.1 200 OK"
+2026-03-16 20:01:09 [INFO] scraper.orchestrator —   ✓ Added lead: Scale yourqualifiedtraffic withSEO and AIstrategies built for modern search <karl@smashdigital.com>
+2026-03-16 20:01:09 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com "HTTP/1.1 200 OK"
+2026-03-16 20:01:12 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/contact "HTTP/1.1 404 Not Found"
+2026-03-16 20:01:12 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/contact (attempt 1)
+2026-03-16 20:01:12 [INFO] scraper.base_scraper — Retrying in 2.3s…
+2026-03-16 20:01:15 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/contact "HTTP/1.1 404 Not Found"
+2026-03-16 20:01:16 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/contact (attempt 2)
+2026-03-16 20:01:16 [INFO] scraper.base_scraper — Retrying in 4.6s…
+2026-03-16 20:01:20 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/contact "HTTP/1.1 404 Not Found"
+2026-03-16 20:01:20 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/contact (attempt 3)
+2026-03-16 20:01:20 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/contact after 3 attempts.
+2026-03-16 20:01:23 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:01:23 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/contact-us (attempt 1)
+2026-03-16 20:01:23 [INFO] scraper.base_scraper — Retrying in 2.6s…
+2026-03-16 20:01:26 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:01:26 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/contact-us (attempt 2)
+2026-03-16 20:01:26 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 20:01:31 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:01:31 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/contact-us (attempt 3)
+2026-03-16 20:01:31 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/contact-us after 3 attempts.
+2026-03-16 20:01:33 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/team "HTTP/1.1 301 Moved Permanently"
+2026-03-16 20:01:33 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/ "HTTP/1.1 200 OK"
+2026-03-16 20:01:36 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/about "HTTP/1.1 404 Not Found"
+2026-03-16 20:01:36 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/about (attempt 1)
+2026-03-16 20:01:36 [INFO] scraper.base_scraper — Retrying in 2.2s…
+2026-03-16 20:01:39 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/about "HTTP/1.1 404 Not Found"
+2026-03-16 20:01:40 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/about (attempt 2)
+2026-03-16 20:01:40 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 20:01:44 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/about "HTTP/1.1 404 Not Found"
+2026-03-16 20:01:44 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/about (attempt 3)
+2026-03-16 20:01:44 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/about after 3 attempts.
+2026-03-16 20:01:47 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:01:47 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/about-us (attempt 1)
+2026-03-16 20:01:47 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 20:01:50 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:01:50 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/about-us (attempt 2)
+2026-03-16 20:01:50 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 20:01:55 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:01:55 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/about-us (attempt 3)
+2026-03-16 20:01:55 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/about-us after 3 attempts.
+2026-03-16 20:01:58 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/people "HTTP/1.1 404 Not Found"
+2026-03-16 20:01:58 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/people (attempt 1)
+2026-03-16 20:01:58 [INFO] scraper.base_scraper — Retrying in 3.0s…
+2026-03-16 20:02:02 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/people "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:02 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/people (attempt 2)
+2026-03-16 20:02:02 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 20:02:07 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/people "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:07 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/people (attempt 3)
+2026-03-16 20:02:07 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/people after 3 attempts.
+2026-03-16 20:02:10 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:10 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/leadership (attempt 1)
+2026-03-16 20:02:10 [INFO] scraper.base_scraper — Retrying in 2.3s…
+2026-03-16 20:02:14 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:14 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/leadership (attempt 2)
+2026-03-16 20:02:14 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 20:02:19 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:19 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/leadership (attempt 3)
+2026-03-16 20:02:19 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/leadership after 3 attempts.
+2026-03-16 20:02:21 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/founders "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:22 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/founders (attempt 1)
+2026-03-16 20:02:22 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 20:02:25 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/founders "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:25 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/founders (attempt 2)
+2026-03-16 20:02:25 [INFO] scraper.base_scraper — Retrying in 4.9s…
+2026-03-16 20:02:30 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/founders "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:30 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/founders (attempt 3)
+2026-03-16 20:02:30 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/founders after 3 attempts.
+2026-03-16 20:02:32 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/us "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:32 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/us (attempt 1)
+2026-03-16 20:02:32 [INFO] scraper.base_scraper — Retrying in 2.6s…
+2026-03-16 20:02:35 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/us "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:35 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/us (attempt 2)
+2026-03-16 20:02:35 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 20:02:40 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/us "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:40 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/us (attempt 3)
+2026-03-16 20:02:40 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/us after 3 attempts.
+2026-03-16 20:02:43 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:43 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/reach-out (attempt 1)
+2026-03-16 20:02:43 [INFO] scraper.base_scraper — Retrying in 2.2s…
+2026-03-16 20:02:46 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:46 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/reach-out (attempt 2)
+2026-03-16 20:02:46 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 20:02:51 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:51 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/reach-out (attempt 3)
+2026-03-16 20:02:51 [ERROR] scraper.base_scraper — Failed to fetch https://www.aspectinvestors.com/reach-out after 3 attempts.
+2026-03-16 20:02:51 [INFO] scraper.orchestrator —   Skipping https://www.aspectinvestors.com — no email found.
+2026-03-16 20:02:51 [INFO] httpx — HTTP Request: GET https://etaequity.com "HTTP/1.1 200 OK"
+2026-03-16 20:02:51 [INFO] scraper.orchestrator —   ✓ Added lead: INVESTING IN AND SUPPORTING SEARCH FUND ENTREPRENEURS <ETA@etaequity.com>
+2026-03-16 20:02:51 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com "HTTP/1.1 200 OK"
+2026-03-16 20:02:53 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/contact "HTTP/1.1 200 OK"
+2026-03-16 20:02:55 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:55 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/contact-us (attempt 1)
+2026-03-16 20:02:55 [INFO] scraper.base_scraper — Retrying in 2.7s…
+2026-03-16 20:02:58 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:02:58 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/contact-us (attempt 2)
+2026-03-16 20:02:58 [INFO] scraper.base_scraper — Retrying in 4.5s…
+2026-03-16 20:03:02 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:02 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/contact-us (attempt 3)
+2026-03-16 20:03:02 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/contact-us after 3 attempts.
+2026-03-16 20:03:04 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/team "HTTP/1.1 200 OK"
+2026-03-16 20:03:06 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/about "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:06 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/about (attempt 1)
+2026-03-16 20:03:06 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-16 20:03:09 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/about "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:09 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/about (attempt 2)
+2026-03-16 20:03:09 [INFO] scraper.base_scraper — Retrying in 4.9s…
+2026-03-16 20:03:14 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/about "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:14 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/about (attempt 3)
+2026-03-16 20:03:14 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/about after 3 attempts.
+2026-03-16 20:03:17 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:17 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/about-us (attempt 1)
+2026-03-16 20:03:17 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 20:03:19 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:19 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/about-us (attempt 2)
+2026-03-16 20:03:19 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 20:03:24 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:24 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/about-us (attempt 3)
+2026-03-16 20:03:24 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/about-us after 3 attempts.
+2026-03-16 20:03:27 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/people "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:27 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/people (attempt 1)
+2026-03-16 20:03:27 [INFO] scraper.base_scraper — Retrying in 2.6s…
+2026-03-16 20:03:29 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/people "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:29 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/people (attempt 2)
+2026-03-16 20:03:29 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 20:03:33 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/people "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:33 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/people (attempt 3)
+2026-03-16 20:03:33 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/people after 3 attempts.
+2026-03-16 20:03:37 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:37 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/leadership (attempt 1)
+2026-03-16 20:03:37 [INFO] scraper.base_scraper — Retrying in 2.4s…
+2026-03-16 20:03:39 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:39 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/leadership (attempt 2)
+2026-03-16 20:03:39 [INFO] scraper.base_scraper — Retrying in 4.3s…
+2026-03-16 20:03:43 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:43 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/leadership (attempt 3)
+2026-03-16 20:03:43 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/leadership after 3 attempts.
+2026-03-16 20:03:45 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/founders "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:45 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/founders (attempt 1)
+2026-03-16 20:03:45 [INFO] scraper.base_scraper — Retrying in 2.3s…
+2026-03-16 20:03:47 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/founders "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:47 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/founders (attempt 2)
+2026-03-16 20:03:47 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 20:03:52 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/founders "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:52 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/founders (attempt 3)
+2026-03-16 20:03:52 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/founders after 3 attempts.
+2026-03-16 20:03:54 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/us "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:54 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/us (attempt 1)
+2026-03-16 20:03:54 [INFO] scraper.base_scraper — Retrying in 2.5s…
+2026-03-16 20:03:56 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/us "HTTP/1.1 404 Not Found"
+2026-03-16 20:03:56 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/us (attempt 2)
+2026-03-16 20:03:56 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-16 20:04:01 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/us "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:01 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/us (attempt 3)
+2026-03-16 20:04:01 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/us after 3 attempts.
+2026-03-16 20:04:04 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:04 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/reach-out (attempt 1)
+2026-03-16 20:04:04 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-16 20:04:06 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:06 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/reach-out (attempt 2)
+2026-03-16 20:04:06 [INFO] scraper.base_scraper — Retrying in 4.5s…
+2026-03-16 20:04:11 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:11 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/reach-out (attempt 3)
+2026-03-16 20:04:11 [ERROR] scraper.base_scraper — Failed to fetch https://www.endurancesearchpartners.com/reach-out after 3 attempts.
+2026-03-16 20:04:11 [INFO] scraper.orchestrator —   Skipping https://www.endurancesearchpartners.com — no email found.
+2026-03-16 20:04:11 [INFO] httpx — HTTP Request: GET https://miramarequity.com "HTTP/1.1 200 OK"
+2026-03-16 20:04:14 [INFO] httpx — HTTP Request: GET https://miramarequity.com/contact "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:14 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/contact (attempt 1)
+2026-03-16 20:04:14 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-16 20:04:17 [INFO] httpx — HTTP Request: GET https://miramarequity.com/contact "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:17 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/contact (attempt 2)
+2026-03-16 20:04:17 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 20:04:22 [INFO] httpx — HTTP Request: GET https://miramarequity.com/contact "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:22 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/contact (attempt 3)
+2026-03-16 20:04:22 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/contact after 3 attempts.
+2026-03-16 20:04:24 [INFO] httpx — HTTP Request: GET https://miramarequity.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:24 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/contact-us (attempt 1)
+2026-03-16 20:04:24 [INFO] scraper.base_scraper — Retrying in 2.7s…
+2026-03-16 20:04:26 [INFO] httpx — HTTP Request: GET https://miramarequity.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:26 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/contact-us (attempt 2)
+2026-03-16 20:04:26 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 20:04:31 [INFO] httpx — HTTP Request: GET https://miramarequity.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:31 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/contact-us (attempt 3)
+2026-03-16 20:04:31 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/contact-us after 3 attempts.
+2026-03-16 20:04:34 [INFO] httpx — HTTP Request: GET https://miramarequity.com/team "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:34 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/team (attempt 1)
+2026-03-16 20:04:34 [INFO] scraper.base_scraper — Retrying in 3.0s…
+2026-03-16 20:04:37 [INFO] httpx — HTTP Request: GET https://miramarequity.com/team "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:37 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/team (attempt 2)
+2026-03-16 20:04:37 [INFO] scraper.base_scraper — Retrying in 4.6s…
+2026-03-16 20:04:41 [INFO] httpx — HTTP Request: GET https://miramarequity.com/team "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:41 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/team (attempt 3)
+2026-03-16 20:04:41 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/team after 3 attempts.
+2026-03-16 20:04:43 [INFO] httpx — HTTP Request: GET https://miramarequity.com/about "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:43 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/about (attempt 1)
+2026-03-16 20:04:43 [INFO] scraper.base_scraper — Retrying in 2.3s…
+2026-03-16 20:04:46 [INFO] httpx — HTTP Request: GET https://miramarequity.com/about "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:46 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/about (attempt 2)
+2026-03-16 20:04:46 [INFO] scraper.base_scraper — Retrying in 4.1s…
+2026-03-16 20:04:50 [INFO] httpx — HTTP Request: GET https://miramarequity.com/about "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:50 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/about (attempt 3)
+2026-03-16 20:04:50 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/about after 3 attempts.
+2026-03-16 20:04:51 [INFO] httpx — HTTP Request: GET https://miramarequity.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:51 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/about-us (attempt 1)
+2026-03-16 20:04:51 [INFO] scraper.base_scraper — Retrying in 2.5s…
+2026-03-16 20:04:54 [INFO] httpx — HTTP Request: GET https://miramarequity.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:54 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/about-us (attempt 2)
+2026-03-16 20:04:54 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 20:04:59 [INFO] httpx — HTTP Request: GET https://miramarequity.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-16 20:04:59 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/about-us (attempt 3)
+2026-03-16 20:04:59 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/about-us after 3 attempts.
+2026-03-16 20:05:00 [INFO] httpx — HTTP Request: GET https://miramarequity.com/people "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:00 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/people (attempt 1)
+2026-03-16 20:05:00 [INFO] scraper.base_scraper — Retrying in 3.0s…
+2026-03-16 20:05:04 [INFO] httpx — HTTP Request: GET https://miramarequity.com/people "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:04 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/people (attempt 2)
+2026-03-16 20:05:04 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 20:05:08 [INFO] httpx — HTTP Request: GET https://miramarequity.com/people "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:08 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/people (attempt 3)
+2026-03-16 20:05:08 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/people after 3 attempts.
+2026-03-16 20:05:09 [INFO] httpx — HTTP Request: GET https://miramarequity.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:09 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/leadership (attempt 1)
+2026-03-16 20:05:09 [INFO] scraper.base_scraper — Retrying in 2.1s…
+2026-03-16 20:05:12 [INFO] httpx — HTTP Request: GET https://miramarequity.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:12 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/leadership (attempt 2)
+2026-03-16 20:05:12 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 20:05:17 [INFO] httpx — HTTP Request: GET https://miramarequity.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:17 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/leadership (attempt 3)
+2026-03-16 20:05:17 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/leadership after 3 attempts.
+2026-03-16 20:05:20 [INFO] httpx — HTTP Request: GET https://miramarequity.com/founders "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:20 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/founders (attempt 1)
+2026-03-16 20:05:20 [INFO] scraper.base_scraper — Retrying in 2.1s…
+2026-03-16 20:05:22 [INFO] httpx — HTTP Request: GET https://miramarequity.com/founders "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:22 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/founders (attempt 2)
+2026-03-16 20:05:22 [INFO] scraper.base_scraper — Retrying in 4.6s…
+2026-03-16 20:05:27 [INFO] httpx — HTTP Request: GET https://miramarequity.com/founders "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:27 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/founders (attempt 3)
+2026-03-16 20:05:27 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/founders after 3 attempts.
+2026-03-16 20:05:29 [INFO] httpx — HTTP Request: GET https://miramarequity.com/us "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:29 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/us (attempt 1)
+2026-03-16 20:05:29 [INFO] scraper.base_scraper — Retrying in 2.1s…
+2026-03-16 20:05:32 [INFO] httpx — HTTP Request: GET https://miramarequity.com/us "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:32 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/us (attempt 2)
+2026-03-16 20:05:32 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 20:05:36 [INFO] httpx — HTTP Request: GET https://miramarequity.com/us "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:36 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/us (attempt 3)
+2026-03-16 20:05:36 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/us after 3 attempts.
+2026-03-16 20:05:37 [INFO] httpx — HTTP Request: GET https://miramarequity.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:37 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/reach-out (attempt 1)
+2026-03-16 20:05:37 [INFO] scraper.base_scraper — Retrying in 3.0s…
+2026-03-16 20:05:40 [INFO] httpx — HTTP Request: GET https://miramarequity.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:40 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/reach-out (attempt 2)
+2026-03-16 20:05:40 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-16 20:05:45 [INFO] httpx — HTTP Request: GET https://miramarequity.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:45 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/reach-out (attempt 3)
+2026-03-16 20:05:45 [ERROR] scraper.base_scraper — Failed to fetch https://miramarequity.com/reach-out after 3 attempts.
+2026-03-16 20:05:45 [INFO] scraper.orchestrator —   Skipping https://miramarequity.com — no email found.
+2026-03-16 20:05:45 [INFO] httpx — HTTP Request: GET https://www.hbs.edu/news/podcasts/think-big-buy-small "HTTP/1.1 200 OK"
+2026-03-16 20:05:45 [INFO] scraper.orchestrator —   Already have lead: news@hbs.edu
+2026-03-16 20:05:45 [INFO] scraper.orchestrator — Scraping source: Searchfunder Top Investors
+2026-03-16 20:05:45 [INFO] httpx — HTTP Request: GET https://searchfunder.com/post/top-20-search-fund-investors-so-far "HTTP/1.1 200 OK"
+2026-03-16 20:05:45 [INFO] scraper.directory_scraper — Found 0 profile links on https://searchfunder.com/post/top-20-search-fund-investors-so-far
+2026-03-16 20:05:45 [INFO] scraper.orchestrator —   → Found 0 candidate leads from Searchfunder Top Investors
+2026-03-16 20:05:45 [INFO] scraper.orchestrator — Scraping source: Anacapa Partners Portfolio
+2026-03-16 20:05:46 [INFO] httpx — HTTP Request: GET https://anacapapartners.com/portfolio "HTTP/1.1 302 302"
+2026-03-16 20:05:46 [INFO] httpx — HTTP Request: GET https://anacapapartners.com/portfolio/index.gsp "HTTP/1.1 404 404"
+2026-03-16 20:05:46 [WARNING] scraper.base_scraper — HTTP 404 for https://anacapapartners.com/portfolio (attempt 1)
+2026-03-16 20:05:46 [INFO] scraper.base_scraper — Retrying in 2.1s…
+2026-03-16 20:05:48 [INFO] httpx — HTTP Request: GET https://anacapapartners.com/portfolio "HTTP/1.1 302 302"
+2026-03-16 20:05:48 [INFO] httpx — HTTP Request: GET https://anacapapartners.com/portfolio/index.gsp "HTTP/1.1 404 404"
+2026-03-16 20:05:48 [WARNING] scraper.base_scraper — HTTP 404 for https://anacapapartners.com/portfolio (attempt 2)
+2026-03-16 20:05:48 [INFO] scraper.base_scraper — Retrying in 4.8s…
+2026-03-16 20:05:53 [INFO] httpx — HTTP Request: GET https://anacapapartners.com/portfolio "HTTP/1.1 302 302"
+2026-03-16 20:05:53 [INFO] httpx — HTTP Request: GET https://anacapapartners.com/portfolio/index.gsp "HTTP/1.1 404 404"
+2026-03-16 20:05:53 [WARNING] scraper.base_scraper — HTTP 404 for https://anacapapartners.com/portfolio (attempt 3)
+2026-03-16 20:05:53 [ERROR] scraper.base_scraper — Failed to fetch https://anacapapartners.com/portfolio after 3 attempts.
+2026-03-16 20:05:53 [ERROR] scraper.directory_scraper — Cannot scrape https://anacapapartners.com/portfolio
+2026-03-16 20:05:53 [INFO] scraper.orchestrator —   → Found 0 candidate leads from Anacapa Partners Portfolio
+2026-03-16 20:05:53 [INFO] scraper.orchestrator — Scraping source: Relay Investments Portfolio
+2026-03-16 20:05:53 [INFO] httpx — HTTP Request: GET https://www.relayinvestments.com/entrepreneurs "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:53 [WARNING] scraper.base_scraper — HTTP 404 for https://www.relayinvestments.com/entrepreneurs (attempt 1)
+2026-03-16 20:05:53 [INFO] scraper.base_scraper — Retrying in 2.7s…
+2026-03-16 20:05:56 [INFO] httpx — HTTP Request: GET https://www.relayinvestments.com/entrepreneurs "HTTP/1.1 404 Not Found"
+2026-03-16 20:05:56 [WARNING] scraper.base_scraper — HTTP 404 for https://www.relayinvestments.com/entrepreneurs (attempt 2)
+2026-03-16 20:05:56 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-16 20:06:00 [INFO] httpx — HTTP Request: GET https://www.relayinvestments.com/entrepreneurs "HTTP/1.1 404 Not Found"
+2026-03-16 20:06:00 [WARNING] scraper.base_scraper — HTTP 404 for https://www.relayinvestments.com/entrepreneurs (attempt 3)
+2026-03-16 20:06:00 [ERROR] scraper.base_scraper — Failed to fetch https://www.relayinvestments.com/entrepreneurs after 3 attempts.
+2026-03-16 20:06:00 [ERROR] scraper.directory_scraper — Cannot scrape https://www.relayinvestments.com/entrepreneurs
+2026-03-16 20:06:00 [INFO] scraper.orchestrator —   → Found 0 candidate leads from Relay Investments Portfolio
+2026-03-16 20:06:00 [INFO] scraper.orchestrator — Scraping source: Broadtree Partners Entrepreneurs
+2026-03-16 20:06:02 [INFO] httpx — HTTP Request: GET https://www.broadtreepartners.com/entrepreneurs "HTTP/1.1 301 Moved Permanently"
+2026-03-16 20:06:03 [INFO] httpx — HTTP Request: GET https://broadtreepartners.com/entrepreneurs "HTTP/1.1 404 Not Found"
+2026-03-16 20:06:03 [WARNING] scraper.base_scraper — HTTP 404 for https://www.broadtreepartners.com/entrepreneurs (attempt 1)
+2026-03-16 20:06:03 [INFO] scraper.base_scraper — Retrying in 2.7s…
+2026-03-16 20:06:05 [INFO] httpx — HTTP Request: GET https://www.broadtreepartners.com/entrepreneurs "HTTP/1.1 301 Moved Permanently"
+2026-03-16 20:06:07 [INFO] httpx — HTTP Request: GET https://broadtreepartners.com/entrepreneurs "HTTP/1.1 404 Not Found"
+2026-03-16 20:06:07 [WARNING] scraper.base_scraper — HTTP 404 for https://www.broadtreepartners.com/entrepreneurs (attempt 2)
+2026-03-16 20:06:07 [INFO] scraper.base_scraper — Retrying in 4.3s…
+2026-03-16 20:06:11 [INFO] httpx — HTTP Request: GET https://www.broadtreepartners.com/entrepreneurs "HTTP/1.1 301 Moved Permanently"
+2026-03-16 20:06:12 [INFO] httpx — HTTP Request: GET https://broadtreepartners.com/entrepreneurs "HTTP/1.1 404 Not Found"
+2026-03-16 20:06:12 [WARNING] scraper.base_scraper — HTTP 404 for https://www.broadtreepartners.com/entrepreneurs (attempt 3)
+2026-03-16 20:06:12 [ERROR] scraper.base_scraper — Failed to fetch https://www.broadtreepartners.com/entrepreneurs after 3 attempts.
+2026-03-16 20:06:12 [ERROR] scraper.directory_scraper — Cannot scrape https://www.broadtreepartners.com/entrepreneurs
+2026-03-16 20:06:12 [INFO] scraper.orchestrator —   → Found 0 candidate leads from Broadtree Partners Entrepreneurs
+2026-03-16 20:06:12 [INFO] scraper.orchestrator — Discovery complete. 2 new leads added.
+2026-03-16 20:06:12 [INFO] sfao.main — New leads discovered: 2
+2026-03-16 20:06:13 [INFO] classifier.lead_classifier — Classified lead karl@smashdigital.com: sectors=['software', 'consumer'], geo_hook='fellow operator who has taken the search fund journey successfully'
+2026-03-16 20:06:13 [INFO] classifier.lead_classifier — Classified lead ETA@etaequity.com: sectors=['software', 'healthcare', 'industrials'], geo_hook='fellow operator who has taken the search fund journey successfully'
+2026-03-16 20:06:13 [INFO] classifier.lead_classifier — Classified 2 previously unclassified leads.
+2026-03-16 20:06:13 [INFO] sfao.main — Leads classified: 2
+2026-03-16 20:06:13 [INFO] sfao.main — Running send batch [DRY RUN]…
+2026-03-16 20:06:13 [INFO] email_client.dispatcher — Sending to 2 leads (dry_run=True)
+2026-03-16 20:06:13 [WARNING] attachments.manager — Resume PDF not found at /Users/ishaanjoshi/Documents/GitHub/search_fund_automation/attachments/resume.pdf. Place your resume at attachments/resume.pdf
+2026-03-16 20:06:13 [INFO] email_client.dispatcher — 
+============================================================
+TO: karl@smashdigital.com
+SUBJECT: Quick Ask from a Chester County Entrepreneur
+────────────────────────────────────────────────────────────
+Hi Scale,
+
+I am a high school senior in Chester County and an incoming freshman at UT Austin ECE (ECB) and Canfield Business Honors (25-student cohort). I wanted to connect with a fellow operator who has taken the search fund journey successfully who has actually done the search fund path successfully.
+
+I spent the last few years co-founding two B2B SaaS startups, InstaTrain ($100k pre-seed) and Luminerra, and was selected as a Morgan Stanley Scholar. I'm trying to apply that operator mindset to investing, particularly at the intersection of technology and ETA.
+
+I know you focus heavily on the software and vertical SaaS space now. I would be grateful for the opportunity to help with any sourcing or diligence work on an unpaid basis, just to learn how you operate and add leverage to your search.
+
+I've attached my resume. Do you have 15 minutes next week for a quick chat?
+
+Best,
+Ishaan Joshi
+============================================================
+
+2026-03-16 20:06:13 [INFO] email_client.dispatcher — 
+============================================================
+TO: ETA@etaequity.com
+SUBJECT: Quick Ask from a Chester County Entrepreneur
+────────────────────────────────────────────────────────────
+Hi INVESTING,
+
+I am a high school senior in Chester County and an incoming freshman at UT Austin ECE (ECB) and Canfield Business Honors (25-student cohort). I wanted to connect with a fellow operator who has taken the search fund journey successfully who has actually done the search fund path successfully.
+
+I spent the last few years co-founding two B2B SaaS startups, InstaTrain ($100k pre-seed) and Luminerra, and was selected as a Morgan Stanley Scholar. I'm trying to apply that operator mindset to investing, particularly at the intersection of technology and ETA.
+
+I know you focus heavily on the software and vertical SaaS space now. I would be grateful for the opportunity to help with any sourcing or diligence work on an unpaid basis, just to learn how you operate and add leverage to your search.
+
+I've attached my resume. Do you have 15 minutes next week for a quick chat?
+
+Best,
+Ishaan Joshi
+============================================================
+
+2026-03-16 20:06:13 [INFO] email_client.dispatcher — Send batch complete. 2 emails logged (dry run).
+2026-03-16 20:06:13 [INFO] sfao.main — Emails sent: 2
+2026-03-16 20:51:59 [INFO] sfao.main — [DRY RUN] Skipping response poll.

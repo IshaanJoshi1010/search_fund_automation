@@ -1,0 +1,15 @@
+TO: {{email}}
+SUBJECT: Quick Ask from a Chester County Entrepreneur
+
+Hi {{first_name}},
+
+I am a high school senior in Chester County and an incoming freshman at UT Austin ECE (ECB) and Canfield Business Honors (25-student cohort). I wanted to connect with a {{relationship_hook}} who has actually done the search fund path successfully.
+
+I spent the last few years co-founding two B2B SaaS startups, InstaTrain ($100k pre-seed) and Luminerra, and was selected as a Morgan Stanley Scholar. I'm trying to apply that operator mindset to investing, particularly at the intersection of technology and ETA.
+
+I know you focus heavily on the {{focus_hook}} now. I would be grateful for the opportunity to help with any sourcing or diligence work on an unpaid basis, just to learn how you operate and add leverage to your search.
+
+I've attached my resume{{thesis_clause}}. Do you have 15 minutes next week for a quick chat?
+
+Best,
+Ishaan Joshi

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}— Overview{% endblock %}
+{% block content %}
+<div class="page-header">
+    <h1>Dashboard</h1>
+    <span class="subtitle">SearchFund Auto-Outreach · Ishaan Joshi</span>
+</div>
+
+<div class="stats-grid">
+    <div class="stat-card">
+        <div class="stat-value">{{ stats.total_leads }}</div>
+        <div class="stat-label">Total Leads</div>
+    </div>
+    <div class="stat-card highlight-blue">
+        <div class="stat-value">{{ stats.new_leads }}</div>
+        <div class="stat-label">Ready to Contact</div>
+    </div>
+    <div class="stat-card highlight-yellow">
+        <div class="stat-value">{{ stats.contacted }}</div>
+        <div class="stat-label">Awaiting Reply</div>
+    </div>
+    <div class="stat-card highlight-green">
+        <div class="stat-value">{{ stats.replied }}</div>
+        <div class="stat-label">Replied 🎉</div>
+    </div>
+    <div class="stat-card highlight-gray">
+        <div class="stat-value">{{ stats.closed }}</div>
+        <div class="stat-label">Closed (No Response)</div>
+    </div>
+    <div class="stat-card highlight-purple">
+        <div class="stat-value">{{ stats.sent_today }}</div>
+        <div class="stat-label">Sent Today</div>
+    </div>
+</div>
+
+<div class="quick-actions">
+    <h2>Quick Actions</h2>
+    <div class="action-buttons">
+        <a href="{{ url_for('main.run_discovery_route') }}" class="btn btn-secondary">🔍 Discover New Leads</a>
+        <a href="{{ url_for('main.run_send_route') }}" class="btn btn-primary">📤 Send Today's Batch</a>
+        <a href="{{ url_for('main.run_followup_route') }}" class="btn btn-secondary">🔁 Send Follow-ups</a>
+        <a href="{{ url_for('main.run_poll_route') }}" class="btn btn-secondary">📬 Poll Replies</a>
+    </div>
+</div>
+
+<div class="pipeline-section">
+    <h2>Pipeline Overview</h2>
+    <div class="pipeline-bar">
+        {% set total = [stats.total_leads, 1] | max %}
+        <div class="pipeline-segment seg-new" style="width: {{ (stats.new_leads / total * 100) | round }}%">
+            <span>New ({{ stats.new_leads }})</span>
+        </div>
+        <div class="pipeline-segment seg-contacted" style="width: {{ (stats.contacted / total * 100) | round }}%">
+            <span>Contacted ({{ stats.contacted }})</span>
+        </div>
+        <div class="pipeline-segment seg-replied" style="width: {{ (stats.replied / total * 100) | round }}%">
+            <span>Replied ({{ stats.replied }})</span>
+        </div>
+    </div>
+</div>
+{% endblock %}

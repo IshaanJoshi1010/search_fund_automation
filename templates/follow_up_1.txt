@@ -1,0 +1,11 @@
+TO: {{email}}
+SUBJECT: Re: Quick Ask from a Chester County Entrepreneur
+
+Hi {{first_name}},
+
+I know you are busy running your search, so I just wanted to bump this in case it slipped through the cracks. I'd still love to help with sourcing or diligence on an unpaid basis in exchange for learning, and I can start immediately.
+
+If you're open to it, is there a 15-minute slot next week that works for you?
+
+Best,
+Ishaan

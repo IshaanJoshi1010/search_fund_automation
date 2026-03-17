@@ -1,0 +1,139 @@
+# SearchFund Auto-Outreach (SFAO) Configuration
+
+# ─── Email Settings ────────────────────────────────────────────────────────────
+email:
+  daily_send_cap: 15
+  send_window_hour: 9          # 9 AM local time
+  delay_between_sends_min: 30  # seconds
+  delay_between_sends_max: 90  # seconds
+
+# ─── Follow-up Rules ───────────────────────────────────────────────────────────
+followup:
+  followup_1_days: 7
+  followup_2_days: 7
+  max_followups: 2
+
+# ─── Scheduler (cron expressions) ─────────────────────────────────────────────
+scheduler:
+  discovery_cron: "0 3 * * *"   # 3 AM daily
+  send_cron: "0 9 * * *"        # 9 AM daily
+  followup_cron: "0 10 * * *"   # 10 AM daily
+  response_poll_cron: "0 */4 * * *"  # every 4 hours
+
+# ─── Seed Source URLs ──────────────────────────────────────────────────────────
+source_urls:
+  - name: "Smash.vc Search Fund Investors"
+    url: "https://smash.vc/search-fund-investors/"
+    type: "investor_directory"
+  - name: "Searchfunder Top Investors"
+    url: "https://searchfunder.com/post/top-20-search-fund-investors-so-far"
+    type: "investor_directory"
+  - name: "Anacapa Partners Portfolio"
+    url: "https://anacapapartners.com/portfolio"
+    type: "investor_directory"
+  - name: "Relay Investments Portfolio"
+    url: "https://www.relayinvestments.com/entrepreneurs"
+    type: "investor_directory"
+  - name: "Broadtree Partners Entrepreneurs"
+    url: "https://www.broadtreepartners.com/entrepreneurs"
+    type: "investor_directory"
+
+# ─── Ishaan's Bio (used in template rendering) ─────────────────────────────────
+sender:
+  name: "Ishaan Joshi"
+  sign_off: "Best,"
+  bio_line: |
+    I spent the last few years co-founding two B2B SaaS startups, InstaTrain ($100k pre-seed) 
+    and Luminerra, and was selected as a Morgan Stanley Scholar. I'm trying to apply that 
+    operator mindset to investing, particularly at the intersection of technology and ETA.
+  intro_line: |
+    I am a high school senior in Chester County and an incoming freshman at UT Austin ECE (ECB) 
+    and Canfield Business Honors (25-student cohort).
+
+# ─── Geography: relationship_hook mappings ─────────────────────────────────────
+geography:
+  mid_atlantic_states: ["PA", "NJ", "DE", "MD", "VA", "DC"]
+  philadelphia_metro_cities:
+    - "Philadelphia"
+    - "Chester"
+    - "King of Prussia"
+    - "Wayne"
+    - "Malvern"
+    - "Exton"
+    - "West Chester"
+    - "Devon"
+    - "Berwyn"
+    - "Ardmore"
+    - "Wilmington"
+    - "Camden"
+
+# ─── Sector Keywords → Tags ───────────────────────────────────────────────────
+sector_keywords:
+  software:
+    - "software"
+    - "SaaS"
+    - "vertical software"
+    - "technology"
+    - "tech"
+    - "platform"
+  tech_enabled_services:
+    - "tech-enabled"
+    - "technology-enabled"
+    - "digital services"
+    - "managed services"
+  healthcare:
+    - "healthcare"
+    - "health services"
+    - "medical"
+    - "dental"
+    - "behavioral health"
+  government_services:
+    - "government"
+    - "government services"
+    - "public sector"
+    - "defense"
+    - "federal"
+  industrials:
+    - "industrial"
+    - "manufacturing"
+    - "distribution"
+    - "logistics"
+    - "supply chain"
+  lower_middle_market:
+    - "lower middle market"
+    - "LMM"
+    - "small business"
+    - "SMB"
+    - "main street"
+  consumer:
+    - "consumer"
+    - "retail"
+    - "hospitality"
+    - "food"
+    - "beverage"
+
+# ─── Education hooks ──────────────────────────────────────────────────────────
+education_hooks:
+  ivy_and_top:
+    - "Wharton"
+    - "Penn"
+    - "University of Pennsylvania"
+    - "Harvard"
+    - "Stanford"
+    - "MIT"
+    - "Princeton"
+    - "Dartmouth"
+    - "Columbia"
+    - "Yale"
+    - "Kellogg"
+    - "Booth"
+    - "Haas"
+    - "Sloan"
+    - "Tuck"
+    - "Darden"
+    - "Ross"
+    - "Fuqua"
+    - "Tepper"
+    - "West Point"
+    - "Naval Academy"
+    - "Air Force Academy"

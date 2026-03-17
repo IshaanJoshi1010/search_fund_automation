@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SFAO Dashboard {% block title %}{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-brand">
+      <span class="brand-icon">⚡</span>
+      <span class="brand-name">SFAO</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="{{ url_for('main.index') }}" class="nav-link {% if request.endpoint == 'main.index' %}active{% endif %}">
+        <span>📊</span> Dashboard
+      </a></li>
+      <li><a href="{{ url_for('main.leads') }}" class="nav-link {% if request.endpoint == 'main.leads' %}active{% endif %}">
+        <span>👥</span> Leads
+      </a></li>
+      <li><a href="{{ url_for('main.logs') }}" class="nav-link {% if request.endpoint == 'main.logs' %}active{% endif %}">
+        <span>📨</span> Email Logs
+      </a></li>
+      <li class="nav-divider"></li>
+      <li><a href="{{ url_for('main.upload_resume') }}" class="nav-link {% if request.endpoint == 'main.upload_resume' %}active{% endif %}">
+        <span>📄</span> Resume
+      </a></li>
+      <li><a href="{{ url_for('main.upload_thesis') }}" class="nav-link {% if request.endpoint == 'main.upload_thesis' %}active{% endif %}">
+        <span>📎</span> Thesis PDFs
+      </a></li>
+      <li class="nav-divider"></li>
+      <li><a href="{{ url_for('main.run_discovery_route') }}" class="nav-link action">
+        <span>🔍</span> Run Discovery
+      </a></li>
+      <li><a href="{{ url_for('main.run_send_route') }}" class="nav-link action">
+        <span>📤</span> Run Send Batch
+      </a></li>
+      <li><a href="{{ url_for('main.run_followup_route') }}" class="nav-link action">
+        <span>🔁</span> Run Follow-ups
+      </a></li>
+      <li><a href="{{ url_for('main.run_poll_route') }}" class="nav-link action">
+        <span>📬</span> Poll Replies
+      </a></li>
+    </ul>
+    <div class="sidebar-footer">
+      {% if dry_run_mode %}
+      <span class="dry-run-badge">DRY RUN MODE</span>
+      {% else %}
+      <span class="dry-run-badge live-badge">LIVE MODE</span>
+      {% endif %}
+    </div>
+  </nav>
+
+  <main class="main-content">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="flash-container">
+          {% for category, message in messages %}
+            <div class="flash flash-{{ category }}">{{ message }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </main>
+
+  <script>
+    // Auto-dismiss flash messages after 4s
+    setTimeout(() => {
+      document.querySelectorAll('.flash').forEach(el => {
+        el.style.opacity = '0';
+        setTimeout(() => el.remove(), 400);
+      });
+    }, 4000);
+  </script>
+</body>
+</html>

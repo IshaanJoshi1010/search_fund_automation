@@ -1,0 +1,17 @@
+.env
+token.json
+credentials.json
+sfao.db
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+attachments/resume.pdf
+attachments/*.pdf
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+logs/

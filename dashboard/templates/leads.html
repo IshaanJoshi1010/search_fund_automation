@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}— Leads{% endblock %}
+{% block content %}
+<div class="page-header">
+    <h1>Leads</h1>
+    <span class="subtitle">{{ total }} total leads</span>
+</div>
+
+<div class="filter-bar">
+    <span>Filter by status:</span>
+    <a href="?status=all" class="filter-btn {% if status_filter == 'all' %}active{% endif %}">All</a>
+    <a href="?status=new" class="filter-btn {% if status_filter == 'new' %}active{% endif %}">New</a>
+    <a href="?status=contacted" class="filter-btn {% if status_filter == 'contacted' %}active{% endif %}">Contacted</a>
+    <a href="?status=replied" class="filter-btn {% if status_filter == 'replied' %}active{% endif %}">Replied</a>
+    <a href="?status=closed_no_response"
+        class="filter-btn {% if status_filter == 'closed_no_response' %}active{% endif %}">Closed</a>
+</div>
+
+<div class="table-container">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Firm</th>
+                <th>Email</th>
+                <th>Location</th>
+                <th>Sector</th>
+                <th>Status</th>
+                <th>Follow-ups</th>
+                <th>Last Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for lead in leads %}
+            <tr>
+                <td class="lead-name">{{ lead.first_name }} {{ lead.last_name }}</td>
+                <td class="muted">{{ lead.firm_name or '—' }}</td>
+                <td><a href="mailto:{{ lead.email }}" class="email-link">{{ lead.email }}</a></td>
+                <td class="muted">
+                    {% if lead.city %}{{ lead.city }}{% if lead.state %}, {{ lead.state }}{% endif %}
+                    {% else %}—{% endif %}
+                </td>
+                <td>
+                    {% if lead.sector_focus %}
+                    {% for tag in lead.sector_focus[:2] %}
+                    <span class="tag">{{ tag | replace('_', ' ') }}</span>
+                    {% endfor %}
+                    {% else %}—{% endif %}
+                </td>
+                <td><span class="status-badge status-{{ lead.response_status.value }}">{{ lead.response_status.value |
+                        replace('_', ' ') }}</span></td>
+                <td class="center">{{ lead.follow_up_count }}</td>
+                <td class="muted">
+                    {% if lead.last_contacted_at %}{{ lead.last_contacted_at.strftime('%b %d') }}{% else %}—{% endif %}
+                </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="8" class="empty-state">No leads found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% if total_pages > 1 %}
+<div class="pagination">
+    {% if page > 1 %}<a href="?status={{ status_filter }}&page={{ page - 1 }}" class="page-btn">← Prev</a>{% endif %}
+    <span>Page {{ page }} of {{ total_pages }}</span>
+    {% if page < total_pages %}<a href="?status={{ status_filter }}&page={{ page + 1 }}" class="page-btn">Next →</a>{%
+        endif %}
+</div>
+{% endif %}
+{% endblock %}

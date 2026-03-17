@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}— Email Logs{% endblock %}
+{% block content %}
+<div class="page-header">
+    <h1>Email Logs</h1>
+    <span class="subtitle">{{ total }} total emails logged</span>
+</div>
+
+<div class="table-container">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Sent At</th>
+                <th>Lead ID</th>
+                <th>Type</th>
+                <th>Subject</th>
+                <th>Body Preview</th>
+                <th>Mode</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for log in logs %}
+            <tr>
+                <td class="muted">{{ log.sent_at.strftime('%b %d %H:%M') }}</td>
+                <td class="center">{{ log.lead_id }}</td>
+                <td><span class="tag type-{{ log.email_type.value }}">{{ log.email_type.value | replace('_', ' ')
+                        }}</span></td>
+                <td>{{ log.subject }}</td>
+                <td class="body-preview muted">{{ (log.body_snippet or '')[:120] }}…</td>
+                <td>
+                    {% if log.dry_run %}
+                    <span class="status-badge status-closed_no_response">dry run</span>
+                    {% else %}
+                    <span class="status-badge status-replied">live</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="6" class="empty-state">No emails logged yet.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% if total_pages > 1 %}
+<div class="pagination">
+    {% if page > 1 %}<a href="?page={{ page - 1 }}" class="page-btn">← Prev</a>{% endif %}
+    <span>Page {{ page }} of {{ total_pages }}</span>
+    {% if page < total_pages %}<a href="?page={{ page + 1 }}" class="page-btn">Next →</a>{% endif %}
+</div>
+{% endif %}
+{% endblock %}
