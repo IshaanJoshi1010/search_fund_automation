@@ -1237,3 +1237,270 @@ Ishaan Joshi
 2026-03-16 20:06:13 [INFO] email_client.dispatcher — Send batch complete. 2 emails logged (dry run).
 2026-03-16 20:06:13 [INFO] sfao.main — Emails sent: 2
 2026-03-16 20:51:59 [INFO] sfao.main — [DRY RUN] Skipping response poll.
+2026-03-17 13:13:28 [INFO] sfao.main — Running discovery + classify…
+2026-03-17 13:13:29 [INFO] scraper.orchestrator — Scraping source: Smash.vc Search Fund Investors
+2026-03-17 13:13:29 [INFO] httpx — HTTP Request: GET https://smash.vc/search-fund-investors/ "HTTP/1.1 200 OK"
+2026-03-17 13:13:29 [INFO] scraper.directory_scraper — Found 10 profile links on https://smash.vc/search-fund-investors/
+2026-03-17 13:13:34 [INFO] httpx — HTTP Request: GET https://snowballclub.com "HTTP/1.1 200 OK"
+2026-03-17 13:13:37 [INFO] httpx — HTTP Request: GET https://investing.io "HTTP/1.1 200 OK"
+2026-03-17 13:13:39 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds "HTTP/1.1 403 Forbidden"
+2026-03-17 13:13:39 [WARNING] scraper.base_scraper — HTTP 403 for https://capitalpad.com/search-funds (attempt 1)
+2026-03-17 13:13:39 [INFO] scraper.base_scraper — Retrying in 2.5s…
+2026-03-17 13:13:42 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds "HTTP/1.1 403 Forbidden"
+2026-03-17 13:13:42 [WARNING] scraper.base_scraper — HTTP 403 for https://capitalpad.com/search-funds (attempt 2)
+2026-03-17 13:13:42 [INFO] scraper.base_scraper — Retrying in 4.9s…
+2026-03-17 13:13:47 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds "HTTP/1.1 403 Forbidden"
+2026-03-17 13:13:47 [WARNING] scraper.base_scraper — HTTP 403 for https://capitalpad.com/search-funds (attempt 3)
+2026-03-17 13:13:47 [ERROR] scraper.base_scraper — Failed to fetch https://capitalpad.com/search-funds after 3 attempts.
+2026-03-17 13:13:50 [INFO] httpx — HTTP Request: GET https://wscandcompany.com "HTTP/1.1 200 OK"
+2026-03-17 13:13:54 [INFO] httpx — HTTP Request: GET https://smashdigital.com "HTTP/1.1 200 OK"
+2026-03-17 13:13:57 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com "HTTP/1.1 200 OK"
+2026-03-17 13:14:00 [INFO] httpx — HTTP Request: GET https://etaequity.com "HTTP/1.1 200 OK"
+2026-03-17 13:14:04 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com "HTTP/1.1 200 OK"
+2026-03-17 13:14:07 [INFO] httpx — HTTP Request: GET https://miramarequity.com "HTTP/1.1 200 OK"
+2026-03-17 13:14:09 [INFO] httpx — HTTP Request: GET https://www.hbs.edu/news/podcasts/think-big-buy-small "HTTP/1.1 200 OK"
+2026-03-17 13:14:09 [INFO] scraper.orchestrator —   → Found 9 candidate leads from Smash.vc Search Fund Investors
+2026-03-17 13:14:10 [INFO] httpx — HTTP Request: GET https://snowballclub.com "HTTP/1.1 200 OK"
+2026-03-17 13:14:12 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact "HTTP/1.1 301 Moved Permanently"
+2026-03-17 13:14:12 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact/ "HTTP/1.1 200 OK"
+2026-03-17 13:14:14 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:14:14 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/contact-us (attempt 1)
+2026-03-17 13:14:14 [INFO] scraper.base_scraper — Retrying in 2.5s…
+2026-03-17 13:14:17 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:14:17 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/contact-us (attempt 2)
+2026-03-17 13:14:17 [INFO] scraper.base_scraper — Retrying in 4.9s…
+2026-03-17 13:14:22 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:14:22 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/contact-us (attempt 3)
+2026-03-17 13:14:22 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/contact-us after 3 attempts.
+2026-03-17 13:14:24 [INFO] httpx — HTTP Request: GET https://snowballclub.com/team "HTTP/1.1 404 Not Found"
+2026-03-17 13:14:24 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/team (attempt 1)
+2026-03-17 13:14:24 [INFO] scraper.base_scraper — Retrying in 2.3s…
+2026-03-17 13:14:26 [INFO] httpx — HTTP Request: GET https://snowballclub.com/team "HTTP/1.1 404 Not Found"
+2026-03-17 13:14:26 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/team (attempt 2)
+2026-03-17 13:14:26 [INFO] scraper.base_scraper — Retrying in 4.0s…
+2026-03-17 13:14:30 [INFO] httpx — HTTP Request: GET https://snowballclub.com/team "HTTP/1.1 404 Not Found"
+2026-03-17 13:14:30 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/team (attempt 3)
+2026-03-17 13:14:30 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/team after 3 attempts.
+2026-03-17 13:14:33 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about "HTTP/1.1 301 Moved Permanently"
+2026-03-17 13:14:33 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about/ "HTTP/1.1 200 OK"
+2026-03-17 13:14:37 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:14:37 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/about-us (attempt 1)
+2026-03-17 13:14:37 [INFO] scraper.base_scraper — Retrying in 2.3s…
+2026-03-17 13:14:39 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:14:39 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/about-us (attempt 2)
+2026-03-17 13:14:39 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-17 13:14:44 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:14:44 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/about-us (attempt 3)
+2026-03-17 13:14:44 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/about-us after 3 attempts.
+2026-03-17 13:14:45 [INFO] httpx — HTTP Request: GET https://snowballclub.com/people "HTTP/1.1 404 Not Found"
+2026-03-17 13:14:45 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/people (attempt 1)
+2026-03-17 13:14:45 [INFO] scraper.base_scraper — Retrying in 2.2s…
+2026-03-17 13:14:48 [INFO] httpx — HTTP Request: GET https://snowballclub.com/people "HTTP/1.1 404 Not Found"
+2026-03-17 13:14:48 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/people (attempt 2)
+2026-03-17 13:14:48 [INFO] scraper.base_scraper — Retrying in 4.4s…
+2026-03-17 13:14:52 [INFO] httpx — HTTP Request: GET https://snowballclub.com/people "HTTP/1.1 404 Not Found"
+2026-03-17 13:14:52 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/people (attempt 3)
+2026-03-17 13:14:52 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/people after 3 attempts.
+2026-03-17 13:14:55 [INFO] httpx — HTTP Request: GET https://snowballclub.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-17 13:14:55 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/leadership (attempt 1)
+2026-03-17 13:14:55 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-17 13:14:58 [INFO] httpx — HTTP Request: GET https://snowballclub.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-17 13:14:58 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/leadership (attempt 2)
+2026-03-17 13:14:58 [INFO] scraper.base_scraper — Retrying in 4.6s…
+2026-03-17 13:15:03 [INFO] httpx — HTTP Request: GET https://snowballclub.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-17 13:15:03 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/leadership (attempt 3)
+2026-03-17 13:15:03 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/leadership after 3 attempts.
+2026-03-17 13:15:05 [INFO] httpx — HTTP Request: GET https://snowballclub.com/founders "HTTP/1.1 404 Not Found"
+2026-03-17 13:15:05 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/founders (attempt 1)
+2026-03-17 13:15:05 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-17 13:15:08 [INFO] httpx — HTTP Request: GET https://snowballclub.com/founders "HTTP/1.1 404 Not Found"
+2026-03-17 13:15:08 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/founders (attempt 2)
+2026-03-17 13:15:08 [INFO] scraper.base_scraper — Retrying in 4.2s…
+2026-03-17 13:15:12 [INFO] httpx — HTTP Request: GET https://snowballclub.com/founders "HTTP/1.1 404 Not Found"
+2026-03-17 13:15:12 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/founders (attempt 3)
+2026-03-17 13:15:12 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/founders after 3 attempts.
+2026-03-17 13:15:14 [INFO] httpx — HTTP Request: GET https://snowballclub.com/us "HTTP/1.1 404 Not Found"
+2026-03-17 13:15:14 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/us (attempt 1)
+2026-03-17 13:15:14 [INFO] scraper.base_scraper — Retrying in 2.8s…
+2026-03-17 13:15:17 [INFO] httpx — HTTP Request: GET https://snowballclub.com/us "HTTP/1.1 404 Not Found"
+2026-03-17 13:15:17 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/us (attempt 2)
+2026-03-17 13:15:17 [INFO] scraper.base_scraper — Retrying in 4.7s…
+2026-03-17 13:15:22 [INFO] httpx — HTTP Request: GET https://snowballclub.com/us "HTTP/1.1 404 Not Found"
+2026-03-17 13:15:22 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/us (attempt 3)
+2026-03-17 13:15:22 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/us after 3 attempts.
+2026-03-17 13:15:25 [INFO] httpx — HTTP Request: GET https://snowballclub.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-17 13:15:25 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/reach-out (attempt 1)
+2026-03-17 13:15:25 [INFO] scraper.base_scraper — Retrying in 2.9s…
+2026-03-17 13:15:28 [INFO] httpx — HTTP Request: GET https://snowballclub.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-17 13:15:28 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/reach-out (attempt 2)
+2026-03-17 13:15:28 [INFO] scraper.base_scraper — Retrying in 4.6s…
+2026-03-17 13:15:33 [INFO] httpx — HTTP Request: GET https://snowballclub.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-17 13:15:33 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/reach-out (attempt 3)
+2026-03-17 13:15:33 [ERROR] scraper.base_scraper — Failed to fetch https://snowballclub.com/reach-out after 3 attempts.
+2026-03-17 13:15:33 [INFO] scraper.orchestrator —   Skipping https://snowballclub.com — no email found.
+2026-03-17 13:15:33 [INFO] httpx — HTTP Request: GET https://investing.io "HTTP/1.1 200 OK"
+2026-03-17 13:15:41 [INFO] sfao.main — Running discovery + classify…
+2026-03-17 13:15:41 [INFO] scraper.orchestrator — Scraping source: Smash.vc Search Fund Investors
+2026-03-17 13:15:41 [INFO] httpx — HTTP Request: GET https://smash.vc/search-fund-investors/ "HTTP/1.1 200 OK"
+2026-03-17 13:15:41 [INFO] scraper.directory_scraper — Found 10 profile links on https://smash.vc/search-fund-investors/
+2026-03-17 13:15:43 [INFO] httpx — HTTP Request: GET https://snowballclub.com "HTTP/1.1 200 OK"
+2026-03-17 13:15:47 [INFO] httpx — HTTP Request: GET https://investing.io "HTTP/1.1 200 OK"
+2026-03-17 13:15:49 [INFO] httpx — HTTP Request: GET https://capitalpad.com/search-funds "HTTP/1.1 403 Forbidden"
+2026-03-17 13:15:49 [WARNING] scraper.base_scraper — HTTP 403 for https://capitalpad.com/search-funds (attempt 1)
+2026-03-17 13:15:53 [INFO] httpx — HTTP Request: GET https://wscandcompany.com "HTTP/1.1 200 OK"
+2026-03-17 13:15:56 [INFO] httpx — HTTP Request: GET https://smashdigital.com "HTTP/1.1 200 OK"
+2026-03-17 13:15:59 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com "HTTP/1.1 200 OK"
+2026-03-17 13:16:01 [INFO] httpx — HTTP Request: GET https://etaequity.com "HTTP/1.1 200 OK"
+2026-03-17 13:16:05 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com "HTTP/1.1 200 OK"
+2026-03-17 13:16:08 [INFO] httpx — HTTP Request: GET https://miramarequity.com "HTTP/1.1 200 OK"
+2026-03-17 13:16:10 [INFO] httpx — HTTP Request: GET https://www.hbs.edu/news/podcasts/think-big-buy-small "HTTP/1.1 200 OK"
+2026-03-17 13:16:10 [INFO] scraper.orchestrator —   → Found 9 candidate leads from Smash.vc Search Fund Investors
+2026-03-17 13:16:10 [INFO] httpx — HTTP Request: GET https://snowballclub.com "HTTP/1.1 200 OK"
+2026-03-17 13:16:13 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact "HTTP/1.1 301 Moved Permanently"
+2026-03-17 13:16:13 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact/ "HTTP/1.1 200 OK"
+2026-03-17 13:16:16 [INFO] httpx — HTTP Request: GET https://snowballclub.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:16:16 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/contact-us (attempt 1)
+2026-03-17 13:16:18 [INFO] httpx — HTTP Request: GET https://snowballclub.com/team "HTTP/1.1 404 Not Found"
+2026-03-17 13:16:18 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/team (attempt 1)
+2026-03-17 13:16:19 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about "HTTP/1.1 301 Moved Permanently"
+2026-03-17 13:16:19 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about/ "HTTP/1.1 200 OK"
+2026-03-17 13:16:22 [INFO] httpx — HTTP Request: GET https://snowballclub.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:16:22 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/about-us (attempt 1)
+2026-03-17 13:16:24 [INFO] httpx — HTTP Request: GET https://snowballclub.com/people "HTTP/1.1 404 Not Found"
+2026-03-17 13:16:24 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/people (attempt 1)
+2026-03-17 13:16:25 [INFO] httpx — HTTP Request: GET https://snowballclub.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-17 13:16:25 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/leadership (attempt 1)
+2026-03-17 13:16:28 [INFO] httpx — HTTP Request: GET https://snowballclub.com/founders "HTTP/1.1 404 Not Found"
+2026-03-17 13:16:28 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/founders (attempt 1)
+2026-03-17 13:16:29 [INFO] httpx — HTTP Request: GET https://snowballclub.com/us "HTTP/1.1 404 Not Found"
+2026-03-17 13:16:29 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/us (attempt 1)
+2026-03-17 13:16:31 [INFO] httpx — HTTP Request: GET https://snowballclub.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-17 13:16:31 [WARNING] scraper.base_scraper — HTTP 404 for https://snowballclub.com/reach-out (attempt 1)
+2026-03-17 13:16:31 [INFO] scraper.orchestrator —   Skipping https://snowballclub.com — no email found.
+2026-03-17 13:16:31 [INFO] httpx — HTTP Request: GET https://investing.io "HTTP/1.1 200 OK"
+2026-03-17 13:16:34 [INFO] httpx — HTTP Request: GET https://investing.io/contact "HTTP/1.1 301 Moved Permanently"
+2026-03-17 13:16:34 [INFO] httpx — HTTP Request: GET https://investing.io/contact/ "HTTP/1.1 200 OK"
+2026-03-17 13:16:37 [INFO] httpx — HTTP Request: GET https://investing.io/contact-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:16:37 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/contact-us (attempt 1)
+2026-03-17 13:16:39 [INFO] httpx — HTTP Request: GET https://investing.io/team "HTTP/1.1 404 Not Found"
+2026-03-17 13:16:39 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/team (attempt 1)
+2026-03-17 13:16:41 [INFO] httpx — HTTP Request: GET https://investing.io/about "HTTP/1.1 301 Moved Permanently"
+2026-03-17 13:16:41 [INFO] httpx — HTTP Request: GET https://investing.io/about/ "HTTP/1.1 200 OK"
+2026-03-17 13:16:43 [INFO] httpx — HTTP Request: GET https://investing.io/about-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:16:43 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/about-us (attempt 1)
+2026-03-17 13:16:46 [INFO] httpx — HTTP Request: GET https://investing.io/people "HTTP/1.1 404 Not Found"
+2026-03-17 13:16:46 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/people (attempt 1)
+2026-03-17 13:16:50 [INFO] httpx — HTTP Request: GET https://investing.io/leadership "HTTP/1.1 404 Not Found"
+2026-03-17 13:16:50 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/leadership (attempt 1)
+2026-03-17 13:16:53 [INFO] httpx — HTTP Request: GET https://investing.io/founders "HTTP/1.1 404 Not Found"
+2026-03-17 13:16:53 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/founders (attempt 1)
+2026-03-17 13:16:55 [INFO] httpx — HTTP Request: GET https://investing.io/us "HTTP/1.1 301 Moved Permanently"
+2026-03-17 13:16:55 [INFO] httpx — HTTP Request: GET https://investing.io/usd-decline/ "HTTP/1.1 200 OK"
+2026-03-17 13:16:58 [INFO] httpx — HTTP Request: GET https://investing.io/reach-out "HTTP/1.1 404 Not Found"
+2026-03-17 13:16:58 [WARNING] scraper.base_scraper — HTTP 404 for https://investing.io/reach-out (attempt 1)
+2026-03-17 13:16:58 [INFO] scraper.orchestrator —   Skipping https://investing.io — no email found.
+2026-03-17 13:16:59 [INFO] httpx — HTTP Request: GET https://wscandcompany.com "HTTP/1.1 200 OK"
+2026-03-17 13:16:59 [INFO] scraper.orchestrator —   Already have lead: info@wscandcompany.com
+2026-03-17 13:16:59 [INFO] httpx — HTTP Request: GET https://smashdigital.com "HTTP/1.1 200 OK"
+2026-03-17 13:17:02 [INFO] httpx — HTTP Request: GET https://smashdigital.com/contact "HTTP/1.1 301 Moved Permanently"
+2026-03-17 13:17:02 [INFO] httpx — HTTP Request: GET https://smashdigital.com/contact/ "HTTP/1.1 200 OK"
+2026-03-17 13:17:05 [INFO] httpx — HTTP Request: GET https://smashdigital.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:05 [WARNING] scraper.base_scraper — HTTP 404 for https://smashdigital.com/contact-us (attempt 1)
+2026-03-17 13:17:08 [INFO] httpx — HTTP Request: GET https://smashdigital.com/team "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:08 [WARNING] scraper.base_scraper — HTTP 404 for https://smashdigital.com/team (attempt 1)
+2026-03-17 13:17:10 [INFO] httpx — HTTP Request: GET https://smashdigital.com/about "HTTP/1.1 301 Moved Permanently"
+2026-03-17 13:17:10 [INFO] httpx — HTTP Request: GET https://smashdigital.com/about/ "HTTP/1.1 200 OK"
+2026-03-17 13:17:10 [INFO] scraper.orchestrator —   Already have lead: karl@smashdigital.com
+2026-03-17 13:17:10 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com "HTTP/1.1 200 OK"
+2026-03-17 13:17:12 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/contact "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:13 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/contact (attempt 1)
+2026-03-17 13:17:16 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:16 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/contact-us (attempt 1)
+2026-03-17 13:17:19 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/team "HTTP/1.1 301 Moved Permanently"
+2026-03-17 13:17:19 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/ "HTTP/1.1 200 OK"
+2026-03-17 13:17:22 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/about "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:22 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/about (attempt 1)
+2026-03-17 13:17:25 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:25 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/about-us (attempt 1)
+2026-03-17 13:17:29 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/people "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:29 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/people (attempt 1)
+2026-03-17 13:17:32 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:32 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/leadership (attempt 1)
+2026-03-17 13:17:34 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/founders "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:35 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/founders (attempt 1)
+2026-03-17 13:17:38 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/us "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:38 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/us (attempt 1)
+2026-03-17 13:17:42 [INFO] httpx — HTTP Request: GET https://www.aspectinvestors.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:42 [WARNING] scraper.base_scraper — HTTP 404 for https://www.aspectinvestors.com/reach-out (attempt 1)
+2026-03-17 13:17:42 [INFO] scraper.orchestrator —   Skipping https://www.aspectinvestors.com — no email found.
+2026-03-17 13:17:42 [INFO] httpx — HTTP Request: GET https://etaequity.com "HTTP/1.1 200 OK"
+2026-03-17 13:17:42 [INFO] scraper.orchestrator —   Already have lead: ETA@etaequity.com
+2026-03-17 13:17:43 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com "HTTP/1.1 200 OK"
+2026-03-17 13:17:44 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/contact "HTTP/1.1 200 OK"
+2026-03-17 13:17:47 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:47 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/contact-us (attempt 1)
+2026-03-17 13:17:50 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/team "HTTP/1.1 200 OK"
+2026-03-17 13:17:52 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/about "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:52 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/about (attempt 1)
+2026-03-17 13:17:54 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:54 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/about-us (attempt 1)
+2026-03-17 13:17:56 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/people "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:56 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/people (attempt 1)
+2026-03-17 13:17:59 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-17 13:17:59 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/leadership (attempt 1)
+2026-03-17 13:18:00 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/founders "HTTP/1.1 404 Not Found"
+2026-03-17 13:18:00 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/founders (attempt 1)
+2026-03-17 13:18:03 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/us "HTTP/1.1 404 Not Found"
+2026-03-17 13:18:03 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/us (attempt 1)
+2026-03-17 13:18:06 [INFO] httpx — HTTP Request: GET https://www.endurancesearchpartners.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-17 13:18:06 [WARNING] scraper.base_scraper — HTTP 404 for https://www.endurancesearchpartners.com/reach-out (attempt 1)
+2026-03-17 13:18:06 [INFO] scraper.orchestrator —   Skipping https://www.endurancesearchpartners.com — no email found.
+2026-03-17 13:18:06 [INFO] httpx — HTTP Request: GET https://miramarequity.com "HTTP/1.1 200 OK"
+2026-03-17 13:18:07 [INFO] httpx — HTTP Request: GET https://miramarequity.com/contact "HTTP/1.1 404 Not Found"
+2026-03-17 13:18:07 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/contact (attempt 1)
+2026-03-17 13:18:09 [INFO] httpx — HTTP Request: GET https://miramarequity.com/contact-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:18:09 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/contact-us (attempt 1)
+2026-03-17 13:18:11 [INFO] httpx — HTTP Request: GET https://miramarequity.com/team "HTTP/1.1 404 Not Found"
+2026-03-17 13:18:11 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/team (attempt 1)
+2026-03-17 13:18:13 [INFO] httpx — HTTP Request: GET https://miramarequity.com/about "HTTP/1.1 404 Not Found"
+2026-03-17 13:18:13 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/about (attempt 1)
+2026-03-17 13:18:14 [INFO] httpx — HTTP Request: GET https://miramarequity.com/about-us "HTTP/1.1 404 Not Found"
+2026-03-17 13:18:14 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/about-us (attempt 1)
+2026-03-17 13:18:15 [INFO] httpx — HTTP Request: GET https://miramarequity.com/people "HTTP/1.1 404 Not Found"
+2026-03-17 13:18:15 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/people (attempt 1)
+2026-03-17 13:18:18 [INFO] httpx — HTTP Request: GET https://miramarequity.com/leadership "HTTP/1.1 404 Not Found"
+2026-03-17 13:18:18 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/leadership (attempt 1)
+2026-03-17 13:18:20 [INFO] httpx — HTTP Request: GET https://miramarequity.com/founders "HTTP/1.1 404 Not Found"
+2026-03-17 13:18:20 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/founders (attempt 1)
+2026-03-17 13:18:22 [INFO] httpx — HTTP Request: GET https://miramarequity.com/us "HTTP/1.1 404 Not Found"
+2026-03-17 13:18:22 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/us (attempt 1)
+2026-03-17 13:18:24 [INFO] httpx — HTTP Request: GET https://miramarequity.com/reach-out "HTTP/1.1 404 Not Found"
+2026-03-17 13:18:24 [WARNING] scraper.base_scraper — HTTP 404 for https://miramarequity.com/reach-out (attempt 1)
+2026-03-17 13:18:24 [INFO] scraper.orchestrator —   Skipping https://miramarequity.com — no email found.
+2026-03-17 13:18:24 [INFO] httpx — HTTP Request: GET https://www.hbs.edu/news/podcasts/think-big-buy-small "HTTP/1.1 200 OK"
+2026-03-17 13:18:24 [INFO] scraper.orchestrator —   Already have lead: news@hbs.edu
+2026-03-17 13:18:24 [INFO] scraper.orchestrator — Scraping source: Searchfunder Top Investors
+2026-03-17 13:18:25 [INFO] httpx — HTTP Request: GET https://searchfunder.com/post/top-20-search-fund-investors-so-far "HTTP/1.1 200 OK"
+2026-03-17 13:18:25 [INFO] scraper.directory_scraper — Found 0 profile links on https://searchfunder.com/post/top-20-search-fund-investors-so-far
+2026-03-17 13:18:25 [INFO] scraper.orchestrator —   → Found 0 candidate leads from Searchfunder Top Investors
+2026-03-17 13:18:25 [INFO] scraper.orchestrator — Scraping source: Anacapa Partners Portfolio
+2026-03-17 13:18:26 [INFO] httpx — HTTP Request: GET https://anacapapartners.com/portfolio "HTTP/1.1 302 302"
+2026-03-17 13:18:26 [INFO] httpx — HTTP Request: GET https://anacapapartners.com/portfolio/index.gsp "HTTP/1.1 404 404"
+2026-03-17 13:18:26 [WARNING] scraper.base_scraper — HTTP 404 for https://anacapapartners.com/portfolio (attempt 1)
+2026-03-17 13:18:26 [ERROR] scraper.directory_scraper — Cannot scrape https://anacapapartners.com/portfolio
+2026-03-17 13:18:26 [INFO] scraper.orchestrator —   → Found 0 candidate leads from Anacapa Partners Portfolio
+2026-03-17 13:18:26 [INFO] scraper.orchestrator — Scraping source: Relay Investments Portfolio
+2026-03-17 13:18:27 [INFO] httpx — HTTP Request: GET https://www.relayinvestments.com/entrepreneurs "HTTP/1.1 404 Not Found"
+2026-03-17 13:18:27 [WARNING] scraper.base_scraper — HTTP 404 for https://www.relayinvestments.com/entrepreneurs (attempt 1)
+2026-03-17 13:18:27 [ERROR] scraper.directory_scraper — Cannot scrape https://www.relayinvestments.com/entrepreneurs
+2026-03-17 13:18:27 [INFO] scraper.orchestrator —   → Found 0 candidate leads from Relay Investments Portfolio
+2026-03-17 13:18:27 [INFO] scraper.orchestrator — Scraping source: Broadtree Partners Entrepreneurs
+2026-03-17 13:18:28 [INFO] httpx — HTTP Request: GET https://www.broadtreepartners.com/entrepreneurs "HTTP/1.1 301 Moved Permanently"
+2026-03-17 13:18:29 [INFO] httpx — HTTP Request: GET https://broadtreepartners.com/entrepreneurs "HTTP/1.1 404 Not Found"
+2026-03-17 13:18:29 [WARNING] scraper.base_scraper — HTTP 404 for https://www.broadtreepartners.com/entrepreneurs (attempt 1)
+2026-03-17 13:18:29 [ERROR] scraper.directory_scraper — Cannot scrape https://www.broadtreepartners.com/entrepreneurs
+2026-03-17 13:18:29 [INFO] scraper.orchestrator —   → Found 0 candidate leads from Broadtree Partners Entrepreneurs
+2026-03-17 13:18:29 [INFO] scraper.orchestrator — Discovery complete. 0 new leads added.
+2026-03-17 13:18:29 [INFO] sfao.main — New leads discovered: 0
+2026-03-17 13:18:29 [INFO] classifier.lead_classifier — Classified 0 previously unclassified leads.
+2026-03-17 13:18:29 [INFO] sfao.main — Leads classified: 0
