@@ -43,7 +43,11 @@ class BaseScraper(ABC):
                 response.raise_for_status()
                 return BeautifulSoup(response.text, "lxml")
             except httpx.HTTPStatusError as e:
-                logger.warning(f"HTTP {e.response.status_code} for {url} (attempt {attempt})")
+                status = e.response.status_code
+                logger.warning(f"HTTP {status} for {url} (attempt {attempt})")
+                # Don't retry client errors (4xx) — page doesn't exist or access denied
+                if status < 500:
+                    return None
             except httpx.RequestError as e:
                 logger.warning(f"Request error for {url}: {e} (attempt {attempt})")
 

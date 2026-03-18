@@ -111,14 +111,27 @@ class GenericProfileScraper(BaseScraper):
 
     @staticmethod
     def _valid_email(email: str) -> bool:
-        """Reject obvious non-personal emails."""
+        """Reject generic/role-based emails — only accept personal addresses."""
+        skip_prefixes = [
+            "info", "contact", "hello", "hi", "hey", "team", "admin",
+            "support", "help", "news", "media", "press", "pr", "marketing",
+            "sales", "office", "mail", "email", "inquiry", "inquiries",
+            "noreply", "no-reply", "donotreply", "eta", "fund", "invest",
+            "partners", "general", "careers", "jobs", "legal", "privacy",
+        ]
         skip_patterns = [
-            "example.com", "youremail", "test@",
-            ".png", ".jpg", ".gif", "noreply", "no-reply",
-            "support@", "info@website",
+            "example.com", "youremail", "test@", ".png", ".jpg", ".gif",
+            "info@website",
         ]
         e = email.lower()
-        return bool(EMAIL_REGEX.match(e)) and not any(p in e for p in skip_patterns)
+        local = e.split("@")[0]
+        if not bool(EMAIL_REGEX.match(e)):
+            return False
+        if any(p in e for p in skip_patterns):
+            return False
+        if local in skip_prefixes:
+            return False
+        return True
 
     @staticmethod
     def _extract_location(text: str, result: dict):

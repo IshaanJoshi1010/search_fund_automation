@@ -22,20 +22,20 @@ scheduler:
 
 # ─── Seed Source URLs ──────────────────────────────────────────────────────────
 source_urls:
-  - name: "Smash.vc Search Fund Investors"
-    url: "https://smash.vc/search-fund-investors/"
+  - name: "Chenmark Portfolio Companies"
+    url: "https://www.chenmark.com/companies"
     type: "investor_directory"
-  - name: "Searchfunder Top Investors"
-    url: "https://searchfunder.com/post/top-20-search-fund-investors-so-far"
+  - name: "Permanent Equity Portfolio"
+    url: "https://permanentequity.com/companies"
     type: "investor_directory"
-  - name: "Anacapa Partners Portfolio"
-    url: "https://anacapapartners.com/portfolio"
+  - name: "Bison Capital Portfolio"
+    url: "https://www.bisoncapital.com/portfolio"
     type: "investor_directory"
-  - name: "Relay Investments Portfolio"
-    url: "https://www.relayinvestments.com/entrepreneurs"
+  - name: "Odyssey Investment Partners Portfolio"
+    url: "https://www.odysseyinvestment.com/portfolio-companies/"
     type: "investor_directory"
-  - name: "Broadtree Partners Entrepreneurs"
-    url: "https://www.broadtreepartners.com/entrepreneurs"
+  - name: "Search Fund Accelerator Cohorts"
+    url: "https://www.searchfundaccelerator.com/alumni"
     type: "investor_directory"
 
 # ─── Ishaan's Bio (used in template rendering) ─────────────────────────────────
